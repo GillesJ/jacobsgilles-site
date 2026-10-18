@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="1175" viewBox="0 0 960 1175">
+  <defs>
+    <linearGradient id="stone"><stop stop-color="#8c8d85"/><stop offset=".35" stop-color="#dfddd2"/><stop offset=".56" stop-color="#f5f0e2"/><stop offset="1" stop-color="#9d9f92"/></linearGradient>
+    <linearGradient id="pages"><stop stop-color="#f8f3e4"/><stop offset=".76" stop-color="#d5d2c4"/><stop offset="1" stop-color="#92978a"/></linearGradient>
+    <linearGradient id="edge" x2="0" y2="1"><stop stop-color="#d8d7c9"/><stop offset="1" stop-color="#697669"/></linearGradient>
+  </defs>
+  <g stroke="#7e877a" stroke-width="3" stroke-linejoin="round">
+    <path fill="url(#stone)" d="M423 437h114l-8 578H431z"/>
+    <path fill="url(#edge)" d="M400 435h160v42H400zM391 989h178v39H391z"/>
+    <path fill="url(#stone)" d="M431 1028l-112 103h322l-112-103z"/>
+    <path fill="url(#edge)" d="M279 1131h402v44H279z"/>
+    <path fill="url(#edge)" d="M123 206l352 56 362-56-30 281-332 95-321-95z"/>
+    <path fill="url(#stone)" d="M125 170l349 51 363-51-42 272-321 103-307-103z"/>
+    <path fill="url(#pages)" d="M153 107c122-22 228 10 321 99v299c-81-72-178-104-294-89z"/>
+    <path fill="url(#pages)" d="M474 206c92-89 197-121 321-99l-27 309c-117-15-212 17-294 89z"/>
+    <g fill="none" stroke="#a7aa9d" stroke-width="4">
+      <path d="M188 161c89-9 170 18 246 77M194 206c87-8 164 18 240 73M200 252c83-6 159 19 234 70M206 298c80-3 154 23 228 70M212 344c78 0 149 23 222 66"/>
+      <path d="M759 161c-89-9-170 18-246 77M753 206c-87-8-164 18-240 73M747 252c-83-6-159 19-234 70M741 298c-80-3-154 23-228 70M735 344c-78 0-149 23-222 66"/>
+    </g>
+    <path fill="url(#edge)" d="M456 219h36v298l-18-12-18 12z"/>
+  </g>
+</svg>

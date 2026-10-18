@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="1175" viewBox="0 0 960 1175">
+  <defs>
+    <linearGradient id="stone"><stop stop-color="#85887f"/><stop offset=".3" stop-color="#dddcd3"/><stop offset=".5" stop-color="#f6f3e8"/><stop offset=".78" stop-color="#c2c2b8"/><stop offset="1" stop-color="#777e76"/></linearGradient>
+    <linearGradient id="ledge" x2="0" y2="1"><stop stop-color="#f7f3e7"/><stop offset="1" stop-color="#999e94"/></linearGradient>
+  </defs>
+  <g stroke="#737b73" stroke-width="3" stroke-linejoin="round">
+    <path fill="url(#stone)" d="M356 262h248l-18 777H374z"/>
+    <g fill="none" stroke="#899087" stroke-width="9">
+      <path d="M389 292l10 720M425 292l5 720M462 292v720M499 292v720M536 292l-5 720M572 292l-10 720"/>
+    </g>
+    <path fill="url(#ledge)" d="M328 246h304v40H328zM316 222h328v24H316z"/>
+    <path fill="url(#stone)" d="M291 108c-69 0-112 48-98 109 12 49 76 70 115 36 25-22 25-64 2-81-20-15-45-5-48 15-2 13 8 23 20 19-22 18-48-5-44-30 5-29 32-39 62-26l56 27h248l56-27c30-13 57-3 62 26 4 25-22 48-44 30 12 4 22-6 20-19-3-20-28-30-48-15-23 17-23 59 2 81 39 34 103 13 115-36 14-61-29-109-98-109z"/>
+    <path fill="url(#ledge)" d="M210 73h540v36H210zM190 51h580v22H190zM332 183h296v35H332z"/>
+    <path fill="url(#ledge)" d="M358 1029h244v32H358zM334 1061h292v37H334zM304 1098h352v35H304zM260 1133h440v42H260z"/>
+  </g>
+</svg>

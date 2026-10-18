@@ -1,0 +1,729 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Exverbai is a freelance AI, ML, backend, and data engineering practice building production-grade intelligent systems."
+    />
+    <meta property="og:title" content="Exverbai | AI, ML, Backend & Data Engineering" />
+    <meta
+      property="og:description"
+      content="Freelance engineering for AI systems, ML pipelines, backend platforms, and data infrastructure."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://exverb.ai/" />
+    <meta property="og:image" content="https://exverb.ai/images/exverbai-hero-subject-inspyrenet-1200.webp" />
+    <meta property="og:image:alt" content="Exverbai — AI, ML, backend and data engineering" />
+    <meta property="og:site_name" content="Exverbai" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Exverbai | AI, ML, Backend & Data Engineering" />
+    <meta name="twitter:description" content="AI engineering grounded in research and built for production. Explore case studies and practical insights on agents, evaluation, and intelligent systems." />
+    <meta name="twitter:image" content="https://exverb.ai/images/exverbai-hero-subject-inspyrenet-1200.webp" />
+    <meta name="twitter:image:alt" content="Exverbai — AI, ML, backend and data engineering" />
+    <link rel="canonical" href="https://exverb.ai/" />
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","name":"Exverbai","url":"https://exverb.ai/","logo":"https://exverb.ai/logo.svg","email":"info@exverb.ai","description":"AI, machine learning, backend, and data engineering consultancy in Belgium.","areaServed":"Europe","founder":{"@type":"Person","name":"Gilles Jacobs"},"sameAs":["https://linkedin.com/company/exverbai","https://github.com/gillesj"]}</script>
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" sizes="any" />
+    <link
+      rel="preload"
+      href="./images/exverbai-hero-subject-inspyrenet-640.avif"
+      as="image"
+      type="image/avif"
+      imagesrcset="./images/exverbai-hero-subject-inspyrenet-512.avif 512w, ./images/exverbai-hero-subject-inspyrenet-640.avif 640w, ./images/exverbai-hero-subject-inspyrenet-864.avif 864w, ./images/exverbai-hero-subject-inspyrenet-960.avif 960w, ./images/exverbai-hero-subject-inspyrenet-1200.avif 1200w"
+      imagesizes="(max-width: 720px) 54vw, (max-width: 2200px) 33vw, 33.25vw"
+      fetchpriority="high"
+    />
+    <link rel="preload" href="/fonts/AlphaLyrae-Medium-subset.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/fonts/DepartureMono-subset.woff2" as="font" type="font/woff2" crossorigin />
+    <style data-site-theme>:root{color-scheme:dark;--ink-on-light:#070607;--glass-lighting:radial-gradient(circle at 18% 12%, rgba(255, 255, 255, 0.14), transparent 34%), linear-gradient(145deg, rgba(255, 255, 255, 0.11), rgba(255, 255, 255, 0.035) 48%, rgba(0, 0, 0, 0.08));--glass-highlight:linear-gradient(138deg, rgba(255, 255, 255, 0.28), transparent 30%), radial-gradient(circle at 74% 17%, rgba(255, 255, 255, 0.2), transparent 28%);--contact-form-material:linear-gradient(145deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.015)), rgba(8, 7, 8, 0.45);--glass-clean-lighting:linear-gradient(145deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.035));--on-image:#ffffff;--on-light-button:#f6f6f2;--on-image-muted:rgba(255, 255, 255, 0.7);--on-image-soft:rgba(255, 255, 255, 0.68);--on-image-body:rgba(255, 255, 255, 0.74);--on-image-label:rgba(255, 255, 255, 0.9);--on-image-secondary:rgba(255, 255, 255, 0.82);--field-material:rgba(255, 255, 255, 0.045);--field-hover-material:rgba(255, 255, 255, 0.075);--glass-top-edge:rgba(255, 255, 255, 0.55);--project-action-highlight:rgba(255, 255, 255, 0.14);--nav-button-surface:#0f0f0f;--about-image-anchor:87%;--about-glass-material:rgba(14, 16, 14, 0.48);--contact-image-fallback:#334741;--hero-mobile-body-ink:rgba(255, 255, 255, 0.78);--portrait-image-filter:brightness(0.85) saturate(0.9);--about-image-filter:brightness(0.8) saturate(0.9);--contact-image-filter:brightness(0.9);--about-image-fallback:#bd7223;--about-image-backdrop:linear-gradient(to bottom, #bd7223, #be7222 50%, #b36419);--page:#0f1110;--paper-ink:#f0f0eb;--white:#f6f6f2;--accent:#6ee57a;--panel:#121412;--panel-2:#171918;--muted-light:rgba(255, 255, 255, 0.62);--line:rgba(255, 255, 255, 0.16);--glass:rgba(24, 24, 24, 0.34);--project-title-glass:rgba(17, 27, 21, 0.70);--project-reflection-opacity:0.1;--project-title-ink:#ffffff;--project-eyebrow-ink:rgba(255, 255, 255, 0.94);--project-type-shadow:0 1px 2px rgba(0, 0, 0, 0.25);--project-action-glass:rgba(8, 18, 12, 0.62);--project-action-ink:#ffffff;--page-background:var(--page);--page-depth-shade:rgba(0, 0, 0, 0.3);--hero-home-gradient:linear-gradient(135deg, #101210 0%, #0f110f 52%, #0e100e 100%);--hero-home-glow:radial-gradient(95% 80% at 22% 16%, rgba(17, 106, 48, 0.1), transparent 55%);--hero-body-ink:rgba(245, 248, 240, 0.72);--hero-stage-bg:#0e100e;--hero-backdrop:#0e100e;--hero-subtitle-ink:#f6f6f2;--hero-about-tint:#1c2c38;--hero-projects-tint:#68261c;--hero-blog-tint:#342538;--hero-page-middle-mix:35%;--hero-page-edge-mix:0%;--article-cover-wash:linear-gradient(110deg, color-mix(in srgb, var(--page) 92%, transparent), color-mix(in srgb, var(--page) 78%, transparent));--nav-material:radial-gradient(circle at 18% 10%, rgba(255, 255, 255, 0.14), transparent 34%), linear-gradient(145deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.035) 46%, rgba(0, 0, 0, 0.1)), rgba(16, 13, 14, 0.34);--nav-ink:rgba(255, 255, 255, 0.76);--contact-action-material:rgba(248, 248, 245, 0.7);--trusted-surface:#141614;--service-body-ink:var(--muted-light);--ripple-ink:rgba(249, 249, 247, 0.28);--ripple-active-ink:rgba(249, 249, 247, 0.64);}@media(prefers-color-scheme:light){:root{color-scheme:light;--portrait-image-filter:saturate(0.95);--about-image-filter:saturate(0.85);--contact-image-filter:contrast(0.6) brightness(0.8) saturate(1.1);--about-image-fallback:#e88f31;--about-image-backdrop:linear-gradient(to bottom, #e88f31, #e98f31 50%, #db7e26);--page:#fbfaf7;--paper-ink:#151813;--white:#101010;--accent:#17472f;--panel:#e4e6df;--panel-2:#f3f4ee;--muted-light:rgba(16, 24, 18, 0.76);--line:rgba(32, 43, 34, 0.18);--glass:rgba(255, 255, 255, 0.48);--project-title-glass:rgba(194, 201, 194, 0.68);--project-reflection-opacity:1;--project-title-ink:#17251d;--project-eyebrow-ink:#17251d;--project-type-shadow:none;--project-action-glass:rgba(102, 120, 107, 0.42);--project-action-ink:#101a14;--page-background:linear-gradient(145deg, #fbfaf7 0%, #f8f7f3 50%, #f5f4ef 100%);--page-depth-shade:rgba(0, 0, 0, 0.26);--hero-home-gradient:linear-gradient(135deg, #e4ebe1 0%, #dfe4dc 48%, #e8e9e2 100%);--hero-home-glow:radial-gradient(95% 80% at 22% 16%, rgba(23, 71, 47, 0.05), transparent 58%);--hero-body-ink:rgba(0, 0, 0, 0.68);--hero-stage-bg:var(--page);--hero-backdrop:#ececea;--hero-subtitle-ink:rgba(0, 0, 0, 0.72);--hero-about-tint:#d7e3ee;--hero-projects-tint:#bd8a7d;--hero-blog-tint:#e4d7e4;--hero-page-middle-mix:48%;--hero-page-edge-mix:20%;--article-cover-wash:linear-gradient(110deg, color-mix(in srgb, var(--page) 92%, transparent), color-mix(in srgb, var(--page) 72%, transparent));--nav-material:linear-gradient(145deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.02)), rgba(194, 201, 194, 0.76);--nav-ink:#28332b;--contact-action-material:rgba(255, 255, 255, 0.65);--trusted-surface:#eef0e8;--service-body-ink:var(--muted-light);--ripple-ink:rgba(82, 87, 78, 0.2);--ripple-active-ink:rgba(82, 87, 78, 0.85);}}</style><style data-site-base>@font-face{font-family:Alpha Lyrae;src:url(/fonts/AlphaLyrae-Medium-subset.woff2) format("woff2");font-display:swap;font-style:normal;font-weight:400 700}@font-face{font-family:Departure Mono;src:url(/fonts/DepartureMono-subset.woff2) format("woff2");font-display:swap;font-style:normal;font-weight:400 900}:root{--edge-gap: 25px;--main-tile-gutter: var(--edge-gap);--page-gutter: clamp(16px, 6.5625vw, 252px);--content-width: calc(100vw - (var(--page-gutter) * 2));--tile-width: var(--content-width);--hero-tile-width: var(--tile-width);--major-tile-width: calc(var(--content-width) - (var(--main-tile-gutter) * 2));--tile-content-inline: clamp(62px, 4.6vw, 94px);--viewport-tile-height: calc(100svh - (var(--main-tile-gutter) * 2));--viewport-tile-max-height: 100000px;--viewport-stage-height: min(var(--viewport-tile-height), var(--viewport-tile-max-height));--section-radius: 156px;--main-tile-gap: calc(var(--main-tile-gutter) + var(--main-tile-gutter));--main-tile-radius: var(--section-radius);--noise: url("data:image/svg+xml,%3Csvg viewBox='0 0 160 160' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.78' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)' opacity='.42'/%3E%3C/svg%3E");--fallback-sans: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;--fallback-mono: ui-monospace, "SFMono-Regular", "SF Mono", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;--font-display: "Alpha Lyrae", var(--fallback-sans);--font-body: "Alpha Lyrae", var(--fallback-sans);--font-ui: "Departure Mono", var(--fallback-mono);--font-eyebrow: var(--font-ui);--font-mono: var(--fallback-mono);--tracking-ui: .04em;--fs-h1: clamp(3.9rem, 6.65vw, 7.8rem);--fs-h1-mobile: clamp(3rem, 16.8vw, 4.1rem);--fs-eyebrow: clamp(1rem, .86rem + .4vw, 1.5rem);--fs-hero-accent: var(--fs-eyebrow);--fs-hero-body: var(--fs-eyebrow);--interaction-transition: .22s ease}@media(min-width:900px){:root{--viewport-tile-max-height: calc(var(--hero-tile-width) * .78)}}@media(max-width:1240px){:root{--tile-content-inline: clamp(36px, 4.6vw, 56px)}}*{box-sizing:border-box}html{background:var(--page)}body{margin:0;min-width:320px;min-height:100vh;background:var(--page-background, var(--page));color:var(--paper-ink);font-family:var(--font-body);font-feature-settings:"calt" 0,"liga" 0,"ss01" 0;line-height:1.5;text-rendering:geometricPrecision}#page-content{position:relative;isolation:isolate}#page-content:before{position:absolute;inset:0;z-index:-1;pointer-events:none;content:"";background:linear-gradient(to bottom,transparent var(--page-depth-start, calc(var(--viewport-stage-height) + var(--main-tile-gutter) * 2)),var(--page-depth-shade) var(--page-depth-end, 85%))}h1,p{margin-top:0}h1{margin-bottom:0;color:var(--ink-on-light);font-family:var(--font-display);font-feature-settings:"calt" 0,"liga" 0;font-size:var(--fs-h1);font-weight:500;letter-spacing:0;line-height:.9;white-space:nowrap}.alpha-mixed{white-space:inherit}.alpha-pixel{display:inline;color:inherit;font-family:var(--font-display);font-feature-settings:"calt" 0,"ss01" 1,"liga" 0;vertical-align:baseline}.brand-wordmark{color:currentColor;font-family:var(--font-display);font-feature-settings:"calt" 0,"liga" 0;letter-spacing:0}.brand-wordmark-ex{color:var(--accent)}.brand-wordmark-ai{color:currentColor;text-shadow:none}.hero{background:transparent}.viewport-tile{display:flow-root;width:var(--hero-tile-width, var(--content-width));height:calc(var(--viewport-stage-height) + (var(--main-tile-gutter) * 2));min-height:0;max-height:none;margin:0 auto;padding:var(--main-tile-gutter);overflow:hidden;overflow:clip;contain:layout paint}.viewport-tile__stage{position:relative;height:var(--viewport-stage-height);border-radius:var(--main-tile-radius);overflow:hidden;overflow:clip;isolation:isolate}.major-tile{width:var(--major-tile-width);margin-inline:auto}.hero-stage{position:relative;container:hero-stage / inline-size;display:flex;flex-direction:column;height:auto;min-height:var(--viewport-stage-height);border-radius:var(--main-tile-radius);overflow:hidden;background:var(--hero-glow),var(--hero-gradient-bg);isolation:isolate;--hero-stacked: 1;--hero-subject-scale: 1;--hero-subject-shift-x: 0px;--hero-gradient-bg: var(--hero-home-gradient);--hero-glow: var(--hero-home-glow);--hero-lede-color: var(--hero-body-ink)}.hero-bg{position:relative;flex:none;order:1;inset:0;z-index:auto;height:min(560px,55svh,calc((100cqw - 2 * var(--tile-content-inline)) * var(--hero-image-ratio, 1) / (2 * max(var(--hero-optical-anchor, .5),1 - var(--hero-optical-anchor, .5)))));margin-top:auto;background:transparent;pointer-events:none}.hero-gradient,.hero-subject{position:absolute}.hero-subject-frame{display:contents}.hero-gradient{display:none;inset:0;width:100%;height:100%;z-index:0;background:var(--hero-glow),var(--hero-gradient-bg)}.hero-gradient:after{position:absolute;inset:0;content:"";background:var(--noise);background-size:140px 140px;mix-blend-mode:soft-light;opacity:.22}.hero-subject{--hero-image-height: 77.45cqh;z-index:2;left:50%;translate:calc(var(--hero-subject-shift-x) + (.5 - var(--hero-optical-anchor, .5)) * 100% * var(--hero-subject-scale)) 0;top:auto;bottom:0;width:auto;height:100%;aspect-ratio:1 / var(--hero-image-ratio, 1);max-width:none;object-fit:contain;object-position:center bottom;transform:translate(-50%) scale(var(--hero-subject-scale));transform-origin:center bottom}.hero-copy{position:relative;z-index:3;display:grid;flex:none;order:0;height:auto;grid-template-columns:1fr;gap:24px;align-content:center;align-items:center;padding:36px var(--tile-content-inline) 24px;pointer-events:none}.hero-title-stack{display:grid;gap:12px;margin:0}.hero-subtitle{white-space:nowrap;margin:0;color:var(--hero-subtitle-ink);font-family:var(--font-eyebrow);font-feature-settings:"calt" 0,"ss01" 1,"liga" 0;font-size:min(var(--fs-hero-accent),max(12px,calc((100cqw - 2 * var(--tile-content-inline)) / var(--hero-subtitle-em, 20))));font-weight:800;letter-spacing:var(--tracking-ui);text-transform:uppercase}.hero-subtitle-dot{display:inline-block;transform:translateY(-.06em)}.lede{max-width:390px;margin:0;color:var(--hero-lede-color);font-family:var(--font-body);font-feature-settings:"calt" 0,"liga" 0,"ss01" 0;font-size:var(--fs-hero-body);font-weight:600;line-height:1.52}.hero-flow{display:none;position:absolute;inset:0;z-index:4;opacity:0;pointer-events:none}@media(min-width:1025px){.hero-stage:where(:not([data-hero-mode=stacked])).is-hero-flow-ready .hero-copy{opacity:0}.hero-stage:where(:not([data-hero-mode=stacked])).is-hero-flow-ready .hero-flow{opacity:1}}.is-hero-flow-settling .hero-flow-line,.is-hero-flow-settling .hero-ascii-ripple{visibility:hidden}.hero-flow-word{position:absolute;top:0;visibility:visible;white-space:pre}.hero-flow-title,.hero-flow-line{position:absolute;z-index:1;pointer-events:none}.hero-flow-title{transform-origin:top left;display:grid;gap:12px;width:max-content}.hero-flow-title h1{margin:0}.hero-flow-title .hero-subtitle{position:relative}.hero-flow-line{display:block;max-width:100%;color:var(--hero-lede-color);white-space:pre}@media(prefers-color-scheme:dark){.hero-gradient:after{mix-blend-mode:soft-light;opacity:.18}.hero h1{color:var(--on-light-button)}}@media(max-width:1024px){:root{--page-gutter: clamp(14px, 4vw, 42px);--content-width: calc(100vw - (var(--page-gutter) * 2));--section-radius: 96px}}@media(max-width:720px){:root{--edge-gap: 14px;--page-gutter: 0px;--content-width: 100vw;--tile-content-inline: 28px;--section-radius: 42px;--fs-h1: var(--fs-h1-mobile)}.hero{min-height:620px}.hero-gradient:after{opacity:0}@media(prefers-color-scheme:dark){.hero-stage{--hero-lede-color: var(--hero-mobile-body-ink)}.hero h1{color:var(--on-image)}.hero-subtitle{color:var(--on-image-secondary)}}}.hero h1{font-size:min(var(--fs-h1),max(32px,calc((100cqw - 2 * var(--tile-content-inline)) / var(--hero-title-em, 5.2))))}.hero{height:auto}@media(min-width:1025px){.hero:not(:has([data-hero-mode=stacked])){height:calc(var(--viewport-stage-height) + var(--main-tile-gutter) * 2)}.hero-stage:where(:not([data-hero-mode=stacked])){--hero-stacked: 0;container-type:size;display:block;height:100%;min-height:0;background:var(--hero-stage-bg);.hero-copy{height:100%;grid-template-columns:minmax(0,1fr) 360px;gap:48px;padding-block:clamp(58px,5vw,72px) 116px}.hero-title-stack{transform:translateY(62px)}.lede{max-width:clamp(390px,calc(390px + (100cqw - 1440px) * 250 / 480),640px);margin-top:142px}.hero-bg{position:absolute;height:auto;background:var(--hero-backdrop)}.hero-subject{width:calc(var(--hero-image-height) / var(--hero-image-ratio, 1));height:var(--hero-image-height)}.hero-gradient,.hero-flow{display:block}@container hero-stage (min-aspect-ratio: 191 / 100){.hero-subject{top:calc(50cqh - 14.36cqw);bottom:auto;width:33.25cqw;height:auto;transform-origin:center top}}}}.collection-page main{padding-top:0}.page-hero .hero-stage{--hero-gradient-bg: radial-gradient(ellipse at 50% 38%, var(--page-hero-tint) 0%, color-mix(in srgb, var(--page-hero-tint) var(--hero-page-middle-mix), var(--page)) 72%, color-mix(in srgb, var(--page-hero-tint) var(--hero-page-edge-mix), var(--page)) 100%);--hero-glow: radial-gradient(95% 80% at 22% 16%, color-mix(in srgb, var(--page-hero-tint) 18%, transparent), transparent 58%)}.page-hero--about .hero-stage{--page-hero-tint: var(--hero-about-tint)}.page-hero--projects .hero-stage{--page-hero-tint: var(--hero-projects-tint)}.page-hero--blog .hero-stage{--page-hero-tint: var(--hero-blog-tint)}</style>
+    <title>Exverbai | AI, ML, Backend & Data Engineering</title>
+    <script type="module" fetchpriority="low" crossorigin src="/assets/main-DmGdxic3.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/main-7LbFeJGE.css">
+  </head>
+  <body><a class="skip-link" href="#top">Skip to content</a>
+    <div id="app">
+  <header class="site-header" aria-label="Primary">
+    <div class="nav-shell">
+      <a class="nav-special brand-mark is-nav-active is-nav-current-page is-nav-at-hero" aria-current="page" href="/" aria-label="Home">
+        <span class="brand-portrait"><img src="/images/exverbai-brand-mark-480.webp" alt="" loading="eager" decoding="async" width="480" height="340" /></span>
+        <span class="brand-label" aria-hidden="true"><span><span class="nav-link-label">Home</span></span></span>
+      </a>
+      <nav aria-label="Main navigation">
+        <a href="/about/"><span class="nav-link-label">About</span></a>
+        <a href="/projects/"><span class="nav-link-label">Projects</span></a>
+        <a href="/blog/"><span class="nav-link-label">Blog</span></a>
+      </nav>
+      <a class="nav-special nav-contact contact-action-glass" href="#contact" aria-label="Contact">
+        <span class="nav-contact-content">
+          <span class="nav-contact-label nav-link-label">Contact</span>
+          <span class="contact-chevron-symbol" aria-hidden="true"></span>
+        </span>
+      </a>
+    </div>
+  </header>
+      <div id="page-content" class="" data-page-kind="home">
+        <main id="top" tabindex="-1"><section class="hero viewport-tile" aria-labelledby="hero-title">
+          <script type="application/json" data-hero-presets>{"signature":"[\"\u003cspan class=\\\"alpha-mixed brand-wordmark\\\" role=\\\"img\\\" aria-label=\\\"exverbai\\\">\u003cspan class=\\\"alpha-pixel brand-wordmark-ex\\\" aria-hidden=\\\"true\\\">ex\u003c/span>\u003cspan aria-hidden=\\\"true\\\">verb\u003c/span>\u003cspan class=\\\"alpha-pixel brand-wordmark-ai\\\" aria-hidden=\\\"true\\\">ai\u003c/span>\u003c/span>\",\"AI \u003cspan class=\\\"hero-subtitle-dot\\\">▪\u003c/span> ML \u003cspan class=\\\"hero-subtitle-dot\\\">▪\u003c/span> Data \u003cspan class=\\\"hero-subtitle-dot\\\">▪\u003c/span> Backend\",\"We turn \u003cspan class=\\\"alpha-pixel\\\">A\u003c/span>\u003cspan class=\\\"alpha-pixel\\\">I\u003c/span> from demo to pr\u003cspan class=\\\"alpha-pixel\\\">o\u003c/span>d\u003cspan class=\\\"alpha-pixel\\\">u\u003c/span>ct\u003cspan class=\\\"alpha-pixel\\\">i\u003c/span>\u003cspan class=\\\"alpha-pixel\\\">o\u003c/span>n: validated m\u003cspan class=\\\"alpha-pixel\\\">o\u003c/span>d\u003cspan class=\\\"alpha-pixel\\\">e\u003c/span>ls, autonomous \u003cspan class=\\\"alpha-pixel\\\">a\u003c/span>g\u003cspan class=\\\"alpha-pixel\\\">e\u003c/span>nts, and scalable b\u003cspan class=\\\"alpha-pixel\\\">a\u003c/span>ck\u003cspan class=\\\"alpha-pixel\\\">e\u003c/span>nds that move the metrics that m\u003cspan class=\\\"alpha-pixel\\\">a\u003c/span>tt\u003cspan class=\\\"alpha-pixel\\\">e\u003c/span>r.\",null,[[\"\",\"/images/exverbai-hero-subject-inspyrenet-512.avif 512w, /images/exverbai-hero-subject-inspyrenet-640.avif 640w, /images/exverbai-hero-subject-inspyrenet-864.avif 864w, /images/exverbai-hero-subject-inspyrenet-960.avif 960w, /images/exverbai-hero-subject-inspyrenet-1200.avif 1200w\",\"(max-width: 720px) 54vw, (max-width: 2200px) 33vw, 33.25vw\",\"\",\"\",\"\"],[\"/images/exverbai-hero-subject-inspyrenet-640.webp\",\"/images/exverbai-hero-subject-inspyrenet-512.webp 512w, /images/exverbai-hero-subject-inspyrenet-640.webp 640w, /images/exverbai-hero-subject-inspyrenet-864.webp 864w, /images/exverbai-hero-subject-inspyrenet-960.webp 960w, /images/exverbai-hero-subject-inspyrenet-1200.webp 1200w\",\"(max-width: 720px) 54vw, (max-width: 2200px) 33vw, 33.25vw\",\"960\",\"1175\",\"0.62\"]]]","typography":[3.8592,16.2344,0.62],"stacks":[],"geometries":[[[84700,69900,4747,2719,1789,6863,1789,14892,15770,44250,54159,100],0,"2/1/1"],[[1500,1300,83,11,7,120,7,304,275,772,946,0],0,"2/1/1"],[[2600,-11200,138,18,12,199,12,5678,-2514,-7056,-8636,0],0,"2/1/1"],[[0,8000,0,0,0,0,0,-3139,1803,5062,6197,0],0,"2/1/1"],[[0,5200,0,0,0,0,0,-2033,1169,3280,4014,0],0,"2/1/1"],[[1800,-4200,92,12,8,133,8,2509,-942,-2647,-3241,0],0,"2/1/1"],[[0,5500,0,0,0,0,0,-2172,1248,3505,4289,0],0,"2/1/1"],[[1000,-12100,55,8,5,80,5,5282,-2737,-7682,-9400,0],0,"2/1/1"],[[0,8000,0,0,0,0,0,-3138,1805,5063,6195,0],0,"2/1/1"],[[0,5000,0,0,0,0,0,-1943,1115,3133,3836,0],0,"2/1/1"],[[400,300,23,3,2,33,2,84,77,215,263,0],0,"2/1/1"],[[1400,-22300,74,9,6,106,6,9441,-5027,-14106,-17264,0],0,"2/1/1"],[[0,8000,0,0,0,0,0,-3139,1805,5063,6195,0],0,"2/1/1"],[[0,8000,0,0,0,0,0,-3139,1803,5062,6197,0],0,"2/1/1"],[[1700,8700,87,12,8,127,8,-2573,1953,5481,6708,0],0,"2/1/1"],[[1500,1100,78,10,7,113,7,287,261,730,892,0],0,"2/1/1"],[[900,-18200,51,7,4,73,4,7624,-4108,-11527,-14106,0],0,"2/1/1"],[[0,8000,0,0,0,0,0,-3139,1805,5063,6195,0],0,"2/1/1"],[[0,8000,0,0,0,0,0,-3138,1803,5062,6197,0],0,"2/1/1"],[[1200,-14600,64,8,6,93,6,6336,-3292,-9239,-11308,0],0,"2/1/1"],[[0,8000,0,0,0,0,0,-3139,1805,5063,6195,0],0,"2/1/1"],[[0,8000,0,0,0,0,0,-3139,1803,5062,6197,0],0,"2/1/1"],[[600,2900,28,4,2,40,2,-882,657,1844,2257,0],0,"2/1/1"],[[800,-18900,46,6,4,67,4,7855,-4265,-11969,-14649,0],0,"2/1/1"],[[0,8000,0,0,0,0,0,-3139,1805,5063,6195,0],0,"2/1/1"],[[0,8000,0,0,0,0,0,-3138,1803,5062,6197,0],0,"2/1/1"],[[4400,7000,634,31,20,332,20,-567,1573,4418,5407,0],0,"3/2/1"],[[1700,-34400,0,12,8,133,8,12472,-9005,-18716,-22908,-100],0,"3/2/0"],[[0,8000,0,0,0,0,0,-1253,3057,2022,2476,100],0,"3/2/1"],[[0,5300,0,0,0,0,0,-2080,1195,3354,4105,0],0,"3/2/1"],[[0,2700,0,0,0,0,0,-1059,609,1708,2091,0],0,"3/2/1"],[[0,5300,0,0,0,0,0,-2080,1196,3355,4104,0],0,"3/2/1"],[[0,2700,0,0,0,0,0,-1059,607,1708,2093,0],0,"3/2/1"],[[0,5300,0,0,0,0,0,-2079,1196,3353,4104,0],0,"3/2/1"],[[0,4700,0,0,0,0,0,-1844,1061,2975,3639,0],0,"3/2/1"],[[0,1700,0,0,0,0,0,-681,390,1098,1346,0],0,"3/2/1"],[[1400,1100,0,9,6,106,6,269,246,685,837,0],0,"3/2/1"],[[3200,2500,0,23,15,246,15,624,564,1587,1944,0],0,"3/2/1"],[[2900,-34500,84,20,13,220,13,13436,-8792,-19361,-23699,-100],0,"3/2/0"],[[0,4900,0,0,0,0,0,-380,2112,614,752,100],0,"3/2/1"],[[0,3100,0,0,0,0,0,-1216,699,1961,2402,0],0,"3/2/1"],[[0,8000,0,0,0,0,0,-3139,1804,5063,6195,0],0,"3/2/1"],[[0,9600,0,0,0,0,0,-3766,2164,6075,7436,0],0,"3/2/1"],[[0,8000,0,0,0,0,0,-3139,1805,5062,6195,0],0,"3/2/1"],[[0,3200,0,0,0,0,0,-1241,712,2002,2450,0],0,"3/2/1"],[[100,-22400,9,1,1,13,1,8861,-5042,-14152,-17320,0],0,"3/2/1"],[[0,8000,0,0,0,0,0,-3138,1803,5063,6197,0],0,"3/2/1"],[[0,8000,0,0,0,0,0,-3139,1805,5062,6195,0],0,"3/2/1"],[[700,-4000,37,5,3,53,3,1916,-902,-2531,-3098,0],0,"3/2/1"],[[0,8000,0,0,0,0,0,-3139,1804,5063,6196,0],0,"3/2/1"],[[0,3000,0,0,0,0,0,-1192,686,1923,2355,0],0,"3/2/1"],[[5600,-38200,294,39,26,426,26,14603,-10774,-19067,-23339,-100],0,"3/2/0"],[[0,12000,0,0,0,0,0,-1527,4856,2462,3016,100],0,"3/2/1"],[[0,2000,0,0,0,0,0,-785,452,1266,1548,0],0,"3/2/1"],[[0,8000,0,0,0,0,0,-3139,1803,5062,6197,0],0,"3/2/1"],[[0,8000,0,0,0,0,0,-3138,1805,5063,6195,0],0,"3/2/1"],[[0,2000,0,0,0,0,0,-785,450,1266,1550,0],0,"3/2/1"],[[0,10600,0,0,0,0,0,-4149,2386,6692,8191,0],0,"3/2/1"],[[2600,-23000,138,18,12,200,12,10317,-5182,-14539,-17795,0],0,"3/2/1"],[[0,8000,0,0,0,0,0,-3139,1804,5062,6196,0],0,"3/2/1"],[[0,8000,0,0,0,0,0,-3138,1804,5063,6196,0],0,"3/2/1"],[[2600,-11600,138,19,12,199,12,5854,-2615,-7341,-8985,0],0,"3/2/1"],[[0,8000,0,0,0,0,0,-3139,1803,5063,6197,0],0,"3/2/1"],[[0,8000,0,0,0,0,0,-3138,1804,5062,6196,0],0,"3/2/1"],[[1100,-17800,55,7,5,80,5,7504,-4014,-11264,-13786,0],0,"3/2/1"],[[0,8000,0,0,0,0,0,-3139,1805,5063,6195,0],0,"3/2/1"],[[0,8000,0,0,0,0,0,-3139,1803,5062,6197,0],0,"3/2/1"],[[2000,-27800,111,14,9,159,9,11130,-6762,-16270,-19914,-100],0,"3/2/0"],[[0,5000,0,0,0,0,0,-1142,1622,1842,2254,100],0,"3/2/1"],[[0,3000,0,0,0,0,0,-1177,676,1898,2324,0],0,"3/2/1"],[[0,1600,0,0,0,0,0,-628,360,1013,1241,0],0,"3/2/1"],[[0,6400,0,0,0,0,0,-2511,1443,4050,4956,0],0,"3/2/1"],[[0,1600,0,0,0,0,0,-628,361,1012,1239,0],0,"3/2/1"],[[0,8000,0,0,0,0,0,-3139,1805,5063,6195,0],0,"3/2/1"],[[5600,-22000,294,39,26,426,26,10859,-5266,-13028,-15945,-100],0,"3/2/0"],[[0,8000,0,0,0,0,0,-2585,2108,4168,5103,100],0,"3/2/1"],[[0,2000,0,0,0,0,0,-784,452,1266,1548,0],0,"3/2/1"],[[0,6000,0,0,0,0,0,-2354,1353,3797,4647,0],0,"3/2/1"],[[0,2000,0,0,0,0,0,-785,450,1266,1550,0],0,"3/2/1"],[[0,8000,0,0,0,0,0,-3139,1804,5062,6196,0],0,"3/2/1"],[[0,13400,0,0,0,0,0,-5264,3025,8491,10393,0],0,"3/2/1"],[[1700,1400,92,12,8,133,8,337,307,857,1050,0],0,"3/2/1"],[[0,0,0,0,0,0,0,0,0,1,0,0],0,"3/2/1"],[[5300,-25800,276,37,24,399,24,12718,-5813,-16310,-19962,0],0,"3/2/1"],[[0,8000,0,0,0,0,0,-3139,1805,5063,6195,0],0,"3/2/1"],[[0,8000,0,0,0,0,0,-3138,1803,5062,6197,0],0,"3/2/1"],[[1000,14700,55,7,5,80,5,-5229,3305,9272,11348,0],0,"3/2/1"],[[1300,-39700,69,9,6,100,6,16209,-8943,-25092,-30710,0],0,"3/2/1"],[[0,8000,0,0,0,0,0,-3139,1805,5062,6195,0],0,"3/2/1"],[[0,8000,0,0,0,0,0,-3138,1805,5063,6195,0],0,"3/2/1"],[[1800,-300,97,13,8,139,8,1030,-69,-191,-231,0],0,"3/2/1"],[[0,8000,0,0,0,0,0,-3139,1805,5063,6195,0],0,"3/2/1"],[[0,8000,0,0,0,0,0,-3138,1803,5062,6197,0],0,"3/2/1"],[[6300,-10800,331,44,29,479,29,7365,-2434,-6834,-8366,0],0,"3/2/1"],[[0,8000,0,0,0,0,0,-3139,1803,5062,6197,0],0,"3/2/1"],[[0,8000,0,0,0,0,0,-3138,1804,5063,6196,0],0,"3/2/1"],[[0,10100,0,0,0,0,0,-3952,2271,6373,7801,0],0,"3/2/1"],[[10400,-37000,552,73,48,510,48,19718,-8336,-23395,-28636,0],0,"3/2/1"],[[0,2000,0,0,0,0,0,-785,450,1266,1550,0],0,"3/2/1"],[[0,4900,0,0,0,0,0,-1922,1106,3100,3794,0],0,"3/2/1"],[[0,3100,0,0,0,0,0,-1217,698,1962,2402,0],0,"3/2/1"],[[0,4000,0,0,0,0,0,-1569,902,2531,3098,0],0,"3/2/1"],[[0,4000,0,0,0,0,0,-1569,902,2532,3098,0],0,"3/2/1"],[[0,4000,0,0,0,0,0,-1569,903,2529,3097,0],0,"3/2/1"],[[0,8000,0,0,0,0,0,-3139,1803,5063,6197,0],0,"3/2/1"],[[7000,-2700,368,49,32,0,32,4534,-608,-1708,-2092,0],0,"3/2/1"],[[0,8000,0,0,0,0,0,-3139,1803,5062,6197,0],0,"3/2/1"],[[0,8000,0,0,0,0,0,-3138,1805,5063,6195,0],0,"3/2/1"],[[0,7200,0,0,0,0,0,-2835,1628,4572,5597,0],0,"3/2/1"],[[4100,-41300,200,29,19,0,19,18298,-9319,-26150,-32006,0],0,"3/2/1"],[[0,8000,0,0,0,0,0,-3139,1805,5062,6195,0],0,"3/2/1"],[[0,4800,0,0,0,0,0,-1882,1083,3036,3717,0],0,"3/2/1"],[[0,3200,0,0,0,0,0,-1256,722,2025,2478,0],0,"3/2/1"],[[0,4800,0,0,0,0,0,-1883,1081,3038,3719,0],0,"3/2/1"],[[0,8000,0,0,0,0,0,-3139,1805,5062,6196,0],0,"3/2/1"],[[9800,23400,0,68,45,0,45,-4302,5268,14786,18096,0],0,"3/2/1"],[[6900,-41400,0,48,32,0,32,19704,-9328,-26175,-32037,0],0,"3/2/1"],[[0,8000,0,0,0,0,0,-3138,1805,5061,6195,0],0,"3/2/1"],[[0,8000,0,0,0,0,0,-3139,1803,5063,6197,0],0,"3/2/1"],[[5600,-12400,0,39,26,0,26,7645,-2795,-7847,-9605,0],0,"3/2/1"],[[0,8000,0,0,0,0,0,-3139,1803,5062,6197,0],0,"3/2/1"],[[0,8000,0,0,0,0,0,-3138,1804,5063,6196,0],0,"3/2/1"],[[8300,14400,0,59,38,0,38,-1480,3247,9112,11153,0],0,"3/2/1"],[[0,8000,0,0,0,0,0,-3139,1805,5063,6195,0],0,"3/2/1"],[[0,8000,0,0,0,0,0,-3138,1803,5062,6197,0],0,"3/2/1"],[[13900,-68000,0,97,64,0,64,22944,-22672,-25797,-31575,-100],0,"3/2/0"],[[0,8000,0,0,0,0,0,0,4000,0,0,0],0,"3/2/0"],[[0,8000,0,0,0,0,0,0,4000,0,0,0],0,"3/2/0"],[[0,20000,0,0,0,0,0,-3439,7457,5547,6791,100],0,"3/2/1"],[[0,8000,0,0,0,0,0,-3139,1803,5063,6196,0],0,"3/2/1"],[[0,8000,0,0,0,0,0,-3139,1804,5062,6196,0],0,"3/2/1"],[[0,8000,0,0,0,0,0,-3139,1805,5063,6195,0],0,"3/2/1"],[[0,8000,0,0,0,0,0,-3138,1803,5062,6197,0],0,"3/2/1"],[[27800,-14000,0,0,0,0,0,19392,-3156,-8859,-10844,0],0,"3/2/1"],[[0,8000,0,0,0,0,0,-3138,1803,5062,6197,0],0,"3/2/1"],[[0,8000,0,0,0,0,0,-3139,1805,5063,6195,0],0,"3/2/1"],[[0,2000,0,0,0,0,0,-784,450,1264,1550,0],0,"3/2/1"],[[0,8000,0,0,0,0,0,-3139,1804,5062,6196,0],0,"3/2/1"],[[0,8000,0,0,0,0,0,-3138,1804,5063,6197,0],0,"3/2/1"],[[10400,4000,0,0,0,0,0,3643,903,2531,3096,0],0,"3/2/1"],[[0,8000,0,0,0,0,0,-3139,1803,5063,6197,0],0,"3/2/1"],[[0,8000,0,0,0,0,0,-3139,1804,5062,6196,0],0,"3/2/1"],[[700,-46800,0,0,0,0,0,18708,-10553,-29614,-36247,0],0,"3/2/1"],[[0,8000,0,0,0,0,0,-3139,1803,5063,6197,0],0,"3/2/1"],[[0,8000,0,0,0,0,0,-3138,1805,5061,6195,0],0,"3/2/1"],[[16700,-5200,0,0,0,0,0,10381,-1173,-3291,-4027,0],0,"3/2/1"],[[0,8000,0,0,0,0,0,-3139,1804,5062,6196,0],0,"3/2/1"],[[0,8000,0,0,0,0,0,-3138,1804,5063,6197,0],0,"3/2/1"],[[20900,-52000,0,0,0,0,0,18504,-20160,-13031,-15952,-100],0,"3/2/0"],[[0,8000,0,0,0,0,0,0,4000,0,0,0],0,"3/2/0"],[[0,8000,0,0,0,0,0,0,4000,0,0,0],0,"3/2/0"],[[34700,56000,0,0,0,0,0,1449,16670,25687,31441,100],0,"3/2/1"],[[0,8000,0,0,0,0,0,-3139,1804,5063,6196,0],0,"3/2/1"],[[0,8000,0,0,0,0,0,-3139,1804,5062,6196,0],0,"3/2/1"],[[128000,-88000,0,0,0,0,0,52653,-51648,18302,22400,-100],0,"3/2/0"],[[0,8000,0,0,0,0,0,0,4000,0,0,0],0,"3/2/0"],[[0,8000,0,0,0,0,0,0,3998,0,0,0],0,"3/2/0"]],"fonts":[["normal|600|Alpha Lyrae, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif|\"calt\" 0, \"liga\" 0, \"ss01\" 0|normal|1.520","normal|500|Alpha Lyrae, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif|\"calt\" 0, \"liga\" 0|normal|0.900","normal|800|Departure Mono, ui-monospace, SFMono-Regular, SF Mono, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace|\"calt\" 0, \"liga\" 0, \"ss01\"|0.040|1.500"]],"hulls":[["/images/exverbai-hero-subject-inspyrenet-512.avif",[[5492,14],[-272,139],[-203,139],[-170,139],[-135,138],[-136,139],[-847,139],[-170,139],[-101,139],[-102,139],[-68,139],[-34,139],[-34,139],[-34,138],[0,139],[-33,139],[0,139],[0,139],[0,139],[0,139],[0,139],[0,139],[33,138],[0,139],[34,139],[34,139],[68,139],[102,139],[0,139],[-34,139],[0,139],[0,138],[0,139],[34,139],[101,139],[68,139],[0,139],[-135,139],[-238,139],[-237,139],[-203,138],[-204,139],[-203,139],[-204,139],[-169,139],[-305,139],[-271,139],[-170,139],[-169,139],[-102,138],[-102,139],[-67,139],[-68,139],[-102,139],[-34,139],[-68,139],[-34,139],[-33,139],[-68,138],[-34,139],[-34,139],[-34,139],[-34,139],[-34,139],[-34,139],[-34,139],[-33,139],[-34,138],[-34,139],[-34,139],[-34,139],[0,139],[0,111],[9661,0],[0,-111],[0,-139],[0,-139],[0,-139],[0,-139],[0,-138],[0,-139],[0,-139],[0,-139],[0,-139],[0,-139],[-34,-139],[0,-139],[-34,-139],[-34,-138],[-34,-139],[-33,-139],[-34,-139],[-34,-139],[-68,-139],[-68,-139],[-68,-139],[-135,-139],[-170,-138],[-203,-139],[-305,-139],[-339,-139],[-204,-139],[-169,-139],[-203,-139],[813,-139],[237,-139],[102,-138],[34,-139],[0,-139],[237,-139],[34,-139],[136,-139],[373,-139],[169,-139],[0,-139],[0,-138],[0,-139],[0,-139],[0,-139],[0,-139],[0,-139],[34,-139],[136,-139],[34,-139],[33,-138],[34,-139],[0,-139],[0,-139],[68,-139],[34,-139],[0,-139],[0,-139],[0,-139],[0,-138],[0,-139],[-68,-139],[-68,-139],[-135,-139],[-136,-139],[-169,-139],[-204,-139],[-169,-139],[-237,-138],[-272,-139],[-271,-139],[-407,-139]]],["/images/exverbai-hero-subject-inspyrenet-640.avif",[[5458,14],[-238,139],[-203,139],[-170,139],[-135,138],[-610,139],[-407,139],[-136,139],[-135,139],[-68,139],[-68,139],[-34,139],[-34,139],[-34,138],[-33,139],[0,139],[0,139],[0,139],[0,139],[0,139],[0,139],[0,139],[33,138],[0,139],[34,139],[34,139],[68,139],[102,139],[-34,139],[0,139],[0,139],[0,138],[0,139],[34,139],[101,139],[68,139],[0,139],[-135,139],[-238,139],[-237,139],[-203,138],[-204,139],[-203,139],[-204,139],[-169,139],[-305,139],[-271,139],[-204,139],[-135,139],[-136,138],[-68,139],[-67,139],[-102,139],[-68,139],[-68,139],[-34,139],[-34,139],[-67,139],[-34,138],[-34,139],[-34,139],[-34,139],[-34,139],[-34,139],[-34,139],[-34,139],[-33,139],[-34,138],[-34,139],[-34,139],[-34,139],[0,139],[0,111],[9695,0],[0,-111],[-34,-139],[0,-139],[0,-139],[0,-139],[0,-138],[0,-139],[0,-139],[0,-139],[0,-139],[0,-139],[-34,-139],[0,-139],[-34,-139],[-34,-138],[0,-139],[-34,-139],[-33,-139],[-68,-139],[-34,-139],[-102,-139],[-68,-139],[-135,-139],[-170,-138],[-203,-139],[-305,-139],[-305,-139],[-238,-139],[-169,-139],[-170,-139],[814,-139],[237,-139],[68,-138],[34,-139],[34,-139],[203,-139],[68,-139],[102,-139],[373,-139],[169,-139],[0,-139],[0,-138],[0,-139],[0,-139],[0,-139],[0,-139],[0,-139],[34,-139],[136,-139],[67,-139],[34,-138],[0,-139],[34,-139],[0,-139],[34,-139],[34,-139],[0,-139],[0,-139],[0,-139],[0,-138],[0,-139],[-34,-139],[-102,-139],[-135,-139],[-136,-139],[-135,-139],[-238,-139],[-169,-139],[-237,-138],[-238,-139],[-305,-139],[-373,-139]]],["/images/exverbai-hero-subject-inspyrenet-864.avif",[[5476,14],[-238,139],[-238,139],[-136,139],[-136,138],[-646,139],[-375,139],[-136,139],[-136,139],[-68,139],[-68,139],[-34,139],[-68,139],[0,138],[-34,139],[0,139],[-34,139],[0,139],[0,139],[34,139],[0,139],[0,139],[0,138],[34,139],[0,139],[68,139],[68,139],[102,139],[-34,139],[0,139],[0,139],[0,138],[0,139],[34,139],[68,139],[102,139],[0,139],[-170,139],[-204,139],[-238,139],[-204,138],[-238,139],[-170,139],[-204,139],[-170,139],[-306,139],[-272,139],[-170,139],[-171,139],[-102,138],[-102,139],[-68,139],[-102,139],[-68,139],[-34,139],[-68,139],[-34,139],[-68,139],[-34,138],[-34,139],[-34,139],[-34,139],[-34,139],[-34,139],[-34,139],[-34,139],[-34,139],[-34,138],[-34,139],[-34,139],[-34,139],[0,139],[0,111],[9694,0],[0,-111],[-34,-139],[0,-139],[0,-139],[0,-139],[0,-138],[0,-139],[0,-139],[0,-139],[0,-139],[-34,-139],[0,-139],[0,-139],[-34,-139],[-34,-138],[0,-139],[-68,-139],[-34,-139],[-34,-139],[-34,-139],[-102,-139],[-68,-139],[-136,-139],[-170,-138],[-205,-139],[-306,-139],[-306,-139],[-238,-139],[-170,-139],[-170,-139],[782,-139],[238,-139],[102,-138],[34,-139],[34,-139],[205,-139],[68,-139],[102,-139],[374,-139],[170,-139],[0,-139],[0,-138],[0,-139],[0,-139],[0,-139],[0,-139],[0,-139],[34,-139],[136,-139],[68,-139],[0,-138],[34,-139],[0,-139],[34,-139],[34,-139],[34,-139],[0,-139],[0,-139],[0,-139],[0,-138],[0,-139],[-34,-139],[-102,-139],[-136,-139],[-136,-139],[-136,-139],[-204,-139],[-204,-139],[-204,-138],[-273,-139],[-306,-139],[-374,-139]]],["/images/exverbai-hero-subject-inspyrenet-960.avif",[[5476,14],[-238,139],[-238,139],[-136,139],[-136,138],[-646,139],[-375,139],[-136,139],[-136,139],[-68,139],[-68,139],[-34,139],[-34,139],[-34,138],[-34,139],[0,139],[0,139],[0,139],[0,139],[0,139],[0,139],[0,139],[0,138],[34,139],[34,139],[34,139],[68,139],[102,139],[-34,139],[0,139],[0,139],[0,138],[0,139],[34,139],[68,139],[102,139],[0,139],[-136,139],[-238,139],[-238,139],[-204,138],[-204,139],[-204,139],[-204,139],[-170,139],[-306,139],[-272,139],[-170,139],[-171,139],[-102,138],[-102,139],[-68,139],[-102,139],[-68,139],[-34,139],[-68,139],[-34,139],[-68,139],[-34,138],[-34,139],[-34,139],[-34,139],[-34,139],[-34,139],[-34,139],[-34,139],[-34,139],[-34,138],[-34,139],[-34,139],[-34,139],[0,139],[0,111],[9694,0],[0,-111],[-34,-139],[0,-139],[0,-139],[0,-139],[0,-138],[0,-139],[0,-139],[0,-139],[0,-139],[0,-139],[-34,-139],[0,-139],[-34,-139],[-34,-138],[-34,-139],[0,-139],[-68,-139],[-34,-139],[-68,-139],[-68,-139],[-68,-139],[-136,-139],[-170,-138],[-205,-139],[-306,-139],[-306,-139],[-238,-139],[-170,-139],[-170,-139],[782,-139],[238,-139],[102,-138],[34,-139],[34,-139],[205,-139],[68,-139],[102,-139],[374,-139],[170,-139],[34,-139],[0,-138],[0,-139],[-34,-139],[0,-139],[0,-139],[0,-139],[34,-139],[136,-139],[34,-139],[34,-138],[34,-139],[0,-139],[34,-139],[34,-139],[34,-139],[0,-139],[0,-139],[0,-139],[0,-138],[0,-139],[-68,-139],[-68,-139],[-136,-139],[-136,-139],[-136,-139],[-204,-139],[-204,-139],[-204,-138],[-273,-139],[-306,-139],[-374,-139]]],["/images/exverbai-hero-subject-inspyrenet-1200.avif",[[5442,14],[-238,139],[-204,139],[-170,139],[-136,138],[-646,139],[-341,139],[-170,139],[-102,139],[-68,139],[-68,139],[-34,139],[-34,139],[-34,138],[-34,139],[0,139],[0,139],[0,139],[0,139],[0,139],[0,139],[0,139],[0,138],[34,139],[0,139],[68,139],[68,139],[102,139],[-34,139],[0,139],[0,139],[0,138],[0,139],[34,139],[68,139],[68,139],[0,139],[-136,139],[-238,139],[-238,139],[-204,138],[-204,139],[-204,139],[-170,139],[-170,139],[-340,139],[-238,139],[-205,139],[-136,139],[-136,138],[-68,139],[-102,139],[-68,139],[-68,139],[-68,139],[-34,139],[-68,139],[-34,139],[-34,138],[-34,139],[-68,139],[-34,139],[0,139],[-68,139],[0,139],[-34,139],[-34,139],[-34,138],[-34,139],[-34,139],[-34,139],[0,139],[0,111],[9694,0],[0,-111],[0,-139],[-34,-139],[0,-139],[34,-139],[0,-138],[0,-139],[0,-139],[0,-139],[-34,-139],[0,-139],[0,-139],[-34,-139],[0,-139],[-34,-138],[-34,-139],[-34,-139],[-34,-139],[-68,-139],[-34,-139],[-68,-139],[-102,-139],[-136,-139],[-170,-138],[-171,-139],[-306,-139],[-340,-139],[-204,-139],[-204,-139],[-170,-139],[816,-139],[238,-139],[68,-138],[34,-139],[34,-139],[239,-139],[34,-139],[102,-139],[408,-139],[170,-139],[0,-139],[0,-138],[0,-139],[0,-139],[-34,-139],[0,-139],[0,-139],[68,-139],[102,-139],[68,-139],[34,-138],[0,-139],[0,-139],[34,-139],[34,-139],[34,-139],[0,-139],[0,-139],[0,-139],[0,-138],[0,-139],[-34,-139],[-102,-139],[-136,-139],[-102,-139],[-170,-139],[-204,-139],[-204,-139],[-204,-138],[-239,-139],[-306,-139],[-374,-139]]]],"patterns":[[["We turn AI from demo to ","production: validated ","models, autonomous ","agents, and scalable ","backends that move the ","metrics that matter."],[11.482,9.945,9.801,9.669,11.317,9.241]],[["We turn AI from demo to ","production: validated ","models, autonomous agents, ","and scalable backends that ","move the metrics that matter."],[11.478,9.941,13.485,12.798,13.731]],[["We turn AI from demo to ","production: validated models, ","autonomous agents, and ","scalable backends that move ","the metrics that matter."],[11.484,13.835,11.55,13.57,11.029]],[["We turn AI from demo to ","production: validated models, ","autonomous agents, and scalable ","backends that move the metrics ","that matter."],[11.478,13.827,15.579,14.996,5.555]],[["We turn AI from demo to production: ","validated models, autonomous ","agents, and scalable backends that ","move the metrics that matter."],[17.038,14.217,16.499,13.743]],[["We turn AI from demo to ","production: validated models, ","autonomous agents, and scalable ","backends that move the metrics that ","matter."],[11.488,13.835,15.592,17.179,3.39]],[["We turn AI from demo to ","production: validated models, ","autonomous agents, and ","scalable backends that move the ","metrics that matter."],[11.488,13.835,11.555,15.36,9.246]],[["We turn AI from demo to production: ","validated models, autonomous agents, ","and scalable backends that move the ","metrics that matter."],[17.041,17.907,17.305,9.245]],[["We turn AI from demo to production: ","validated models, autonomous agents, and ","scalable backends that move the metrics ","that matter."],[17.036,19.851,19.044,5.56]],[["We turn AI from demo to production: validated ","models, autonomous agents, and scalable ","backends that move the metrics that matter."],[21.44,19.482,20.57]],[["We turn AI from demo to production: ","validated models, autonomous agents, and ","scalable backends that move the metrics that ","matter."],[17.042,19.855,21.219,3.39]],[["We turn AI from demo to production: validated ","models, autonomous agents, and scalable backends ","that move the metrics that matter."],[21.442,24.138,15.916]],[["We turn AI from demo to production: validated models, ","autonomous agents, and scalable backends that move ","the metrics that matter."],[25.329,25.132,11.035]]],"layouts":[[0,0,0,[47.5,309.2,232,80.5],0,[[596,268,201],[0,27,171],[0,27,170],[0,28,169],[-4,27,198],[-5,27,165]],[0.7972,0.8497]],[1,0,0,[48.3,315,234.9,82],0,[[609,274,201],[0,27,171],[0,28,170],[0,27,169],[-4,27,198],[-9,27,165]],[0.8044,0.8644]],[2,0,0,[49.7,253.7,261.5,92.5],0,[[603,218,202],[0,27,171],[0,28,170],[-2,27,169],[-4,28,198],[-7,27,165]],[0.8895,0.8941]],[3,0,0,[49.7,295.5,251.5,89],0,[[616,258,202],[0,27,171],[0,28,170],[0,27,169],[-4,28,198],[-10,27,165]],[0.8554,0.8653]],[4,0,0,[49.7,323.2,241.9,85.6],0,[[628,284,202],[0,27,171],[0,28,170],[-1,27,169],[-4,28,198],[-10,27,165]],[0.8227,0.872]],[5,0,0,[50.6,299.6,252.6,90.8],0,[[632,262,202],[0,28,171],[0,27,170],[-4,28,169],[-2,27,198],[-8,28,165]],[0.8562,0.9015]],[6,0,0,[50.6,327.3,251.8,90.5],0,[[633,290,202],[1,28,171],[0,27,170],[0,28,169],[-5,27,198],[-3,28,165]],[0.8536,0.8403]],[7,0,1,[51.2,264.5,265.3,95],0,[[628,243,202],[0,28,171],[-2,27,236],[-4,28,225],[-8,28,246]],[0.8962,0.9293]],[8,0,0,[51.2,306.4,254.9,91.3],0,[[641,269,202],[0,28,171],[0,27,170],[-4,28,169],[-3,28,198],[-8,27,165]],[0.8612,0.9004]],[9,0,0,[51.2,331.8,252.4,90.4],0,[[644,294,202],[0,28,171],[0,27,170],[0,28,169],[-4,28,198],[-7,27,165]],[0.8527,0.8586]],[10,0,0,[51.4,332.9,252.2,91.2],0,[[649,295,202],[0,28,171],[0,27,170],[-1,28,169],[-4,28,198],[-10,28,165]],[0.8521,0.8689]],[11,0,2,[52.1,215.1,285.2,103.7],0,[[622,198,204],[0,28,241],[-3,28,203],[-7,27,240],[-2,28,199]],[0.9604,0.9707]],[12,0,2,[52.1,257.2,273.9,99.6],0,[[636,238,204],[0,28,241],[-3,28,203],[-3,27,240],[-7,28,199]],[0.9223,0.9399]],[13,0,0,[52.1,299.2,263.1,95.7],0,[[650,264,204],[0,28,171],[0,28,172],[-4,27,169],[-4,28,199],[-7,28,167]],[0.8858,0.9125]],[14,0,0,[53,343.7,256.6,93.5],0,[[675,307,205],[0,28,175],[0,28,173],[-4,28,172],[-4,28,201],[-8,28,167]],[0.8582,0.9024]],[15,0,0,[53.8,348.3,260,95.3],0,[[686,312,205],[0,28,175],[0,28,173],[-4,28,172],[-4,28,201],[-9,28,167]],[0.8668,0.9092]],[16,0,2,[54.3,251.7,290.8,106.5],0,[[658,235,205],[0,28,246],[-3,28,205],[-4,28,243],[-6,28,199]],[0.9596,0.9558]],[17,0,1,[54.3,293.9,279,102.2],0,[[673,275,205],[0,28,175],[-3,28,240],[-4,28,229],[-8,28,249]],[0.9209,0.9328]],[18,0,0,[54.3,336,267.8,98.1],0,[[687,301,205],[0,28,175],[0,28,173],[-4,28,172],[-4,28,201],[-9,28,167]],[0.8837,0.9121]],[19,0,2,[54.9,258.3,294.6,107.5],0,[[666,241,205],[0,28,246],[-3,28,205],[-4,29,243],[-7,28,199]],[0.9597,0.9465]],[20,0,2,[54.9,300.4,282.7,103.2],0,[[681,281,205],[0,28,246],[-2,28,205],[-4,29,243],[-9,28,199]],[0.921,0.9265]],[21,0,0,[54.9,342.5,271.4,99],0,[[695,307,205],[0,28,175],[0,28,173],[-4,29,172],[-4,28,201],[-8,28,167]],[0.8839,0.9074]],[22,0,0,[55.2,357.8,268,97.5],0,[[705,322,207],[0,28,177],[0,28,174],[-5,29,173],[-3,28,204],[-9,28,172]],[0.8701,0.9107]],[23,0,2,[55.7,257.8,298.5,108.4],0,[[676,241,210],[0,28,251],[-4,29,210],[-5,28,246],[-5,28,205]],[0.9597,0.9656]],[24,0,2,[55.7,300,286.4,104.1],0,[[691,281,210],[0,28,251],[-4,29,210],[-3,28,246],[-9,28,205]],[0.921,0.9441]],[25,0,0,[55.7,342,275.2,100],0,[[705,307,210],[0,28,179],[0,29,178],[-5,28,173],[-4,28,205],[-8,28,172]],[0.885,0.9218]],[26,0,0,[62,376.7,281,100.6],0,[[739,341,210],[0,29,180],[0,28,178],[-5,29,174],[-3,28,206],[-10,29,173]],[0.8674,0.9028]],[27,0,3,[62,196.5,329,117],0,[[696,183,210],[0,29,252],[-3,28,285],[-10,29,275],[0,29,104]]],[28,0,3,[62,237.1,325.5,115.7],0,[[703,223,210],[0,29,252],[-4,28,285],[-9,29,275],[-1,29,104]],[0.9893,0.9916]],[29,0,3,[62,264.9,318.5,113.3],0,[[712,250,210],[0,29,252],[-4,28,285],[-7,29,275],[-4,29,104]],[0.9681,0.9657]],[30,0,3,[62,279,315.1,112.1],0,[[716,263,210],[0,29,252],[-4,28,285],[-4,29,275],[-7,29,104]],[0.9578,0.9531]],[31,0,2,[62,307.2,305.5,108.6],0,[[728,290,210],[0,29,252],[-5,28,210],[-4,29,248],[-8,29,206]],[0.9285,0.9516]],[32,0,2,[62,321.3,301.8,107.3],0,[[732,303,210],[0,29,252],[-4,28,210],[-4,29,248],[-8,29,206]],[0.9173,0.9436]],[33,0,2,[62,349,295.3,105],0,[[740,330,210],[0,29,252],[-3,28,210],[-3,29,248],[-11,29,206]],[0.8977,0.9231]],[34,0,1,[62,373.6,289,102.8],0,[[748,353,210],[0,29,180],[-2,28,246],[-4,29,233],[-10,29,257]],[0.8785,0.9105]],[35,0,1,[62,382.7,285.9,101.7],0,[[752,362,210],[0,29,180],[-2,28,246],[-4,29,233],[-11,29,257]],[0.8691,0.9106]],[36,0,1,[62,387.5,290.6,103],0,[[762,367,212],[0,29,181],[-3,29,248],[-3,28,235],[-11,29,261]],[0.8728,0.912]],[37,0,2,[62,398.1,302.8,106.8],0,[[783,379,212],[0,29,255],[-3,29,211],[-3,29,252],[-10,29,209]],[0.8828,0.908]],[38,0,4,[62.8,217.5,351,123],0,[[744,220,320],[-4,29,268],[-3,29,311],[-7,30,265]]],[39,0,4,[62.8,242,351,123],0,[[746,245,320],[-4,29,268],[-4,29,311],[-6,30,265]]],[40,0,5,[62.8,257.5,351,123],0,[[753,246,215],[0,29,258],[-5,29,295],[-10,30,327],[0,29,64]]],[41,0,3,[62.8,299.6,339,118.8],0,[[769,286,215],[-1,29,258],[-4,29,295],[-11,30,285],[-1,29,106]],[0.9659,0.9765]],[42,0,6,[62.8,350,325.1,113.9],0,[[786,334,215],[0,29,258],[-5,29,218],[-5,30,291],[-8,29,177]],[0.9263,0.95]],[43,0,2,[62.8,391.9,314.3,110.1],0,[[800,374,215],[0,29,258],[-6,29,218],[-3,30,256],[-11,29,212]],[0.8953,0.9282]],[44,0,2,[62.8,408.6,310.2,108.7],0,[[805,390,215],[0,29,258],[-5,29,218],[-3,30,256],[-11,29,212]],[0.8838,0.9191]],[45,0,3,[62.9,291.2,342.2,119.6],0,[[767,278,215],[-1,29,258],[-4,29,295],[-11,30,285],[-1,29,106]],[0.9721,0.9815]],[46,0,3,[62.9,333.2,331,115.6],0,[[781,318,215],[0,29,258],[-5,29,295],[-5,30,285],[-8,29,106]],[0.9402,0.9552]],[47,0,2,[62.9,374.4,324.2,113.3],0,[[789,358,215],[0,29,258],[-2,29,218],[-4,30,256],[-10,29,212]],[0.9211,0.9073]],[48,0,6,[63.3,353.6,327.7,114.8],0,[[792,338,215],[0,29,260],[-5,30,221],[-5,29,295],[-8,29,179]],[0.9258,0.9484]],[49,0,2,[63.3,395.6,316.5,110.9],0,[[806,378,215],[0,29,260],[-6,30,221],[-3,29,260],[-11,29,214]],[0.8942,0.9283]],[50,0,2,[63.3,411.2,312.9,109.6],0,[[810,393,215],[0,29,260],[-5,30,221],[-2,29,260],[-11,29,214]],[0.8839,0.9187]],[51,0,7,[66.2,211,370,128],0,[[784,216,323],[-4,30,345],[-4,29,335],[-6,30,181]]],[52,0,4,[66.2,271,370,128],0,[[794,276,323],[-5,30,273],[-5,29,318],[-6,30,270]]],[53,0,4,[66.2,281.1,369.6,127.9],0,[[798,286,323],[-4,30,273],[-5,29,318],[-7,30,270]],[0.999,0.9992]],[54,0,5,[66.2,322.9,358.8,124.1],0,[[812,311,218],[-1,30,261],[-4,29,301],[-9,30,333],[-4,30,66]],[0.9696,0.9686]],[55,0,3,[66.2,364.8,347.8,120.3],0,[[826,351,218],[0,30,261],[-6,29,301],[-4,30,290],[-9,30,109]],[0.9401,0.944]],[56,0,3,[66.2,375.7,343.1,118.7],0,[[832,361,218],[-1,30,261],[-5,29,301],[-5,30,290],[-9,30,109]],[0.9272,0.9507]],[57,0,2,[66.2,431.1,328.7,113.7],0,[[849,414,218],[0,30,261],[-5,29,222],[-3,30,262],[-12,30,216]],[0.8884,0.924]],[58,0,4,[67.6,309,372.2,128],0,[[823,313,323],[-5,30,273],[-4,30,318],[-9,30,270]],[0.9847,0.986]],[59,0,3,[67.6,350.6,362.8,124.8],0,[[835,339,218],[0,30,261],[-6,30,301],[-4,30,290],[-9,29,109]],[0.9597,0.9497]],[60,0,3,[67.6,393.1,348.6,119.9],0,[[852,379,218],[0,30,261],[-5,30,301],[-5,30,290],[-10,29,109]],[0.9222,0.947]],[61,0,4,[69,330.3,377.1,129.3],0,[[844,335,326],[-5,30,273],[-3,30,318],[-10,30,272]],[0.9796,0.9738]],[62,0,5,[69,372.6,363.9,124.8],0,[[861,360,220],[-2,30,262],[-4,30,301],[-8,30,334],[-6,30,67]],[0.9452,0.9631]],[63,0,3,[69,414.2,354.5,121.6],0,[[872,400,220],[0,30,262],[-5,30,301],[-4,30,291],[-12,30,110]],[0.9209,0.9332]],[64,0,4,[69.6,320.4,382.5,131.1],0,[[848,326,333],[-5,30,276],[-4,30,323],[-9,30,277]],[0.9859,0.9907]],[65,0,5,[69.6,362.2,372.3,127.6],0,[[861,351,225],[-1,30,266],[-4,30,305],[-7,30,339],[-7,30,68]],[0.9596,0.9603]],[66,0,3,[69.6,404.4,359.4,123.2],0,[[877,391,225],[-1,30,266],[-4,30,305],[-6,30,295],[-10,30,112]],[0.9262,0.9499]],[67,0,7,[70.7,260,395,134],0,[[837,266,333],[-4,30,350],[-4,31,340],[-8,30,186]]],[68,0,7,[70.7,285,395,134],0,[[844,291,333],[-4,30,350],[-5,31,340],[-7,30,186]]],[69,0,7,[70.7,300,395,134],0,[[851,306,333],[-4,30,350],[-6,31,340],[-7,30,186]]],[70,0,7,[70.7,308,394.8,133.9],0,[[855,314,333],[-5,30,350],[-6,31,340],[-7,30,186]],[0.9994,0.9992]],[71,0,7,[70.7,341.4,386.9,131.3],0,[[865,346,333],[-5,30,350],[-4,31,340],[-10,30,186]],[0.9796,0.9703]],[72,0,4,[70.7,350,383,129.9],0,[[870,354,333],[-5,30,276],[-4,31,323],[-10,30,277]],[0.9696,0.9764]],[73,0,3,[70.7,392,371.4,126],0,[[884,379,225],[-1,30,266],[-4,31,305],[-6,30,295],[-9,30,112]],[0.9402,0.9567]],[74,1,7,[73.6,276,411,138],0,[[872,284,334],[-3,31,354],[-6,30,344],[-7,31,186]]],[75,1,7,[73.6,316,411,138],0,[[888,324,334],[-4,31,354],[-8,30,344],[-6,31,186]]],[76,1,7,[73.6,326,411,138],0,[[893,334,334],[-5,31,354],[-7,30,344],[-7,31,186]]],[77,1,7,[73.6,357.4,402.6,135.2],0,[[904,364,334],[-4,31,354],[-6,30,344],[-10,31,186]],[0.9796,0.9831]],[78,1,7,[73.6,367.9,399.5,134.1],0,[[908,374,334],[-4,31,354],[-5,30,344],[-11,31,186]],[0.9721,0.9787]],[79,1,4,[73.6,409.9,387.6,130.1],0,[[923,414,334],[-4,31,279],[-4,30,328],[-14,31,277]],[0.9431,0.9615]],[80,1,3,[73.6,480,369.1,123.9],0,[[946,465,225],[0,31,270],[-5,30,308],[-3,31,297],[-15,31,112]],[0.8981,0.9309]],[81,1,3,[74.5,485.9,375.3,126.3],0,[[956,472,225],[0,31,270],[-4,31,308],[-3,30,297],[-15,31,112]],[0.9021,0.9264]],[82,1,3,[74.5,485.9,375.3,126.3],0,[[956,472,225],[0,31,270],[-4,31,308],[-3,30,297],[-15,31,112]],[0.9021,0.9264]],[83,1,7,[77.3,348,432,144],0,[[939,358,342],[-4,31,361],[-9,31,347],[-5,31,187]]],[84,1,7,[77.3,389.8,421,140.3],0,[[954,398,342],[-4,31,361],[-5,31,347],[-12,31,187]],[0.9746,0.9769]],[85,1,7,[77.3,431.9,408.5,136.2],0,[[970,438,342],[-4,31,361],[-4,31,347],[-15,31,187]],[0.9456,0.9633]],[86,1,5,[77.8,508.1,392.5,130.8],0,[[1001,495,230],[-1,31,277],[-4,31,313],[-4,32,343],[-15,31,68]],[0.9022,0.9336]],[87,1,7,[78.5,302,439,146],0,[[931,312,342],[-4,31,361],[-8,32,347],[-6,31,187]]],[88,1,7,[78.5,342,439,146],0,[[949,352,342],[-4,31,361],[-9,32,347],[-6,31,187]]],[89,1,7,[78.5,383.3,431.2,143.4],0,[[965,392,342],[-4,31,361],[-6,32,347],[-10,31,187]],[0.9822,0.9881]],[90,1,7,[79.5,380.7,439.5,145.5],0,[[975,391,344],[-4,31,363],[-8,32,348],[-8,31,189]],[0.9898,0.9902]],[91,1,7,[79.5,422.8,427.2,141.4],0,[[991,431,344],[-5,31,363],[-5,32,348],[-12,31,189]],[0.9621,0.9746]],[92,1,7,[79.5,464.4,417.4,138.2],0,[[1004,471,344],[-5,31,363],[-3,32,348],[-14,31,189]],[0.9401,0.949]],[93,1,8,[82.8,404.3,457.2,150.4],0,[[1022,416,352],[-4,32,411],[-8,32,395],[-8,32,115]],[0.9897,0.9893]],[94,1,7,[82.8,446.2,445.6,146.6],0,[[1038,456,352],[-5,32,370],[-5,32,358],[-13,32,193]],[0.9646,0.971]],[95,1,7,[82.8,488.1,434.3,142.9],0,[[1053,496,352],[-5,32,370],[-4,32,358],[-15,32,193]],[0.9401,0.954]],[96,1,4,[82.8,540,425.5,140],0,[[1064,546,352],[-2,32,293],[-4,32,339],[-5,32,289]],[0.9209,0.9129]],[97,1,9,[91.9,346.5,482,157],0,[[1057,376,453],[-3,33,415],[-13,32,447]]],[98,1,9,[90.4,356.5,482,157],0,[[1062,386,453],[-4,33,415],[-13,32,447]]],[99,1,9,[88.3,381,482,157],0,[[1073,411,453],[-4,33,415],[-14,32,447]]],[100,1,10,[88.3,396.5,482,157],0,[[1082,410,357],[-4,33,423],[-11,32,456],[-5,33,73]]],[101,1,8,[88.3,416.5,482,157],0,[[1091,430,357],[-3,33,423],[-12,32,408],[-5,33,121]]],[102,1,8,[88.3,436.5,482,157],0,[[1100,450,357],[-3,33,423],[-13,32,408],[-4,33,121]]],[103,1,7,[88.3,456.8,480.3,156.4],0,[[1108,470,357],[-2,33,381],[-13,32,370],[-5,33,201]],[0.9964,0.9974]],[104,1,7,[88.3,498.7,468.6,152.6],0,[[1123,510,357],[-3,33,381],[-7,32,370],[-12,33,201]],[0.9721,0.9809]],[105,2,8,[92,483,482,157],0,[[1161,495,357],[-4,33,423],[-13,33,408],[-4,33,121]]],[106,2,7,[92,523,482,157],0,[[1178,535,357],[-3,33,381],[-15,33,370],[-3,33,201]]],[107,2,7,[92,564.7,471.6,153.6],0,[[1193,575,357],[-4,33,381],[-8,33,370],[-11,33,201]],[0.9784,0.983]],[108,2,7,[92,602.4,461.4,150.3],0,[[1207,611,357],[-4,33,381],[-5,33,370],[-17,33,201]],[0.9573,0.9692]],[109,2,9,[117.4,392,482,158],0,[[1142,421,460],[-3,33,421],[-14,34,452]]],[110,2,9,[108,432,482,158],0,[[1160,461,460],[-3,33,421],[-15,34,452]]],[111,2,9,[102.4,456,482,158],0,[[1171,485,460],[-4,33,421],[-14,34,452]]],[112,2,10,[98.7,472,482,158],0,[[1180,484,362],[-4,33,430],[-13,34,461],[-4,33,74]]],[113,2,8,[94,496,482,158],0,[[1191,508,362],[-4,33,430],[-14,34,413],[-3,33,122]]],[114,2,7,[94,536,482,158],0,[[1208,548,362],[-2,33,387],[-16,34,375],[-3,33,203]]],[115,2,7,[94,653,482,158],0,[[1320,664,371],[-4,34,391],[-19,34,376],[-2,34,205]]],[116,2,11,[188,445.5,482,159],0,[[1264,473,474],[-4,35,533],[-15,34,358]]],[117,2,9,[173.2,485.5,482,159],0,[[1282,513,474],[-4,35,429],[-15,34,462]]],[118,2,9,[158.4,525.5,482,159],0,[[1301,553,474],[-6,35,429],[-15,34,462]]],[119,2,11,[212.9,463.5,482,159],0,[[1302,491,482],[-3,35,547],[-15,35,366]]],[120,2,9,[197.4,503.5,482,159],0,[[1321,531,482],[-5,35,441],[-15,35,472]]],[121,2,9,[182,543.5,482,159],0,[[1339,571,482],[-6,35,441],[-15,35,472]]],[122,2,9,[196.7,615,482,160],0,[[1415,642,483],[-8,36,445],[-15,35,476]]],[123,2,9,[182,655,482,160],0,[[1432,682,483],[-8,36,445],[-14,35,476]]],[124,2,9,[166.6,695,482,160],0,[[1450,722,483],[-9,36,445],[-14,35,476]]],[125,2,12,[310.1,354.5,482,161],0,[[1430,380,601],[-3,36,598],[-17,37,264]]],[126,2,12,[310.1,394.5,482,161],0,[[1430,420,601],[-3,36,598],[-17,37,264]]],[127,2,12,[310.1,434.5,482,161],0,[[1430,460,601],[-3,36,598],[-17,37,264]]],[128,2,12,[293,534.5,482,161],0,[[1450,560,601],[-5,36,598],[-16,37,264]]],[129,2,12,[278.3,574.5,482,161],0,[[1469,600,601],[-6,36,598],[-17,37,264]]],[130,2,11,[264,614.5,482,161],0,[[1487,640,508],[-7,36,572],[-16,37,383]]],[131,2,11,[249.6,654.5,482,161],0,[[1504,680,508],[-7,36,572],[-16,37,383]]],[132,2,9,[234.2,694.5,482,161],0,[[1522,720,508],[-8,36,461],[-16,37,494]]],[133,3,12,[400.1,624.5,482,161],0,[[1630,650,601],[-7,36,598],[-13,37,264]]],[134,3,12,[384.7,664.5,482,161],0,[[1648,690,601],[-7,36,598],[-13,37,264]]],[135,3,12,[369.3,704.5,482,161],0,[[1666,730,601],[-8,36,598],[-13,37,264]]],[136,3,12,[365.5,714.5,482,161],0,[[1670,740,601],[-8,36,598],[-12,37,264]]],[137,3,12,[350.1,754.5,482,161],0,[[1688,780,601],[-10,36,598],[-11,37,264]]],[138,3,12,[334.8,794.5,482,161],0,[[1706,820,601],[-11,36,598],[-10,37,264]]],[139,4,12,[379.2,814.5,482,161],0,[[1771,840,601],[-14,36,598],[-12,37,264]]],[140,4,12,[363.8,854.5,482,161],0,[[1788,880,601],[-14,36,598],[-11,37,264]]],[141,4,12,[348.5,894.5,482,161],0,[[1806,920,601],[-15,36,598],[-10,37,264]]],[142,4,12,[441.9,660.5,482,161],0,[[1704,686,601],[-9,36,598],[-13,37,264]]],[143,4,12,[426.5,700.5,482,161],0,[[1723,726,601],[-11,36,598],[-13,37,264]]],[144,4,12,[411.1,740.5,482,161],0,[[1741,766,601],[-12,36,598],[-12,37,264]]],[145,4,12,[504.5,714.5,482,161],0,[[1813,740,601],[-12,36,598],[-12,37,264]]],[146,4,12,[489.1,754.5,482,161],0,[[1830,780,601],[-12,36,598],[-12,37,264]]],[147,4,12,[473.8,794.5,482,161],0,[[1848,820,601],[-13,36,598],[-11,37,264]]],[148,4,12,[617.6,534.5,482,161],0,[[1906,560,601],[-9,36,598],[-14,37,264]]],[149,4,12,[617.6,574.5,482,161],0,[[1906,600,601],[-9,36,598],[-14,37,264]]],[150,4,12,[617.6,614.5,482,161],0,[[1906,640,601],[-9,36,598],[-14,37,264]]],[151,4,12,[713.3,894.5,482,161],0,[[2171,920,601],[-16,36,598],[-10,37,264]]],[152,4,12,[698,934.5,482,161],0,[[2189,960,601],[-17,36,598],[-9,37,264]]],[153,4,12,[682.6,974.5,482,161],0,[[2207,1000,601],[-18,36,598],[-9,37,264]]],[154,4,12,[1267,534.5,482,161],0,[[2911,560,601],[-19,36,598],[-8,37,264]]],[155,4,12,[1267,574.5,482,161],0,[[2911,600,601],[-19,36,598],[-8,37,264]]],[156,4,12,[1267,614.5,482,161],0,[[2911,640,601],[-19,36,598],[-8,37,264]]]]}</script><script data-hero-bootstrap>(()=>{var I=/[A-Za-z]+/g,$=new Set(["ai","production","models","agents","backends","matter"]);function H(e){return e==="&"?"&amp;":e==="<"?"&lt;":e===">"?"&gt;":e}function A(e,n){return[...e].map((a,t)=>n.has(t)?`<span class="alpha-pixel">${H(a)}</span>`:H(a)).join("")}var G=new Set(["a","e","i","o","u"]);function O(e,n){let a=new Set;for(let t of e.matchAll(I)){let o=t[0];if(n.has(o.toLowerCase()))for(let i=0;i<o.length;i+=1)G.has(o[i].toLowerCase())&&a.add(t.index+i)}return a}function L(e,n=$){return A(e,O(e,n))}var z=new Map,_=e=>e.textContent.replace(/\s+/g," ").trim(),B=e=>Math.min(40,Math.max(24,e));var V=e=>getComputedStyle(e).getPropertyValue("--hero-stacked").trim()==="1";function D(e){let n=0,a=0;return e.map(([t,o])=>({x:(n+=t)/1e4,y:(a+=o)/1e4}))}function K(e){let n=e.querySelector(".hero-subject"),a=[...e.querySelectorAll(".hero-subject-frame source"),n].map(t=>["src","srcset","sizes","width","height","data-optical-anchor"].map(o=>(t.getAttribute(o)??"").split(location.origin).join("").replace(/\.\/images\//g,"/images/")));return JSON.stringify([...[...e.querySelectorAll(".hero-copy h1, .hero-copy .hero-subtitle, .hero-copy .lede")].map(t=>t.innerHTML.replace(/\s+/g," ").trim()),e.dataset.heroPixelWords,a])}function U(e){let n=e.querySelector(".hero-subject"),a=e.getBoundingClientRect(),t=n.getBoundingClientRect(),o=[".lede","h1",".hero-subtitle"].map(r=>getComputedStyle(e.querySelector(`.hero-copy ${r}`))),i=getComputedStyle(n),f=parseFloat(i.getPropertyValue("--hero-subject-scale"))||1,u=parseFloat(i.getPropertyValue("--hero-optical-anchor"))||.5,y=t.width/f,l=t.height/f,h=parseFloat(i.transformOrigin.split(" ")[1])===0?0:1;return{box:[e.clientWidth,e.clientHeight,parseFloat(getComputedStyle(e.querySelector(".hero-copy")).paddingInlineStart),parseFloat(o[0].lineHeight),...o.map(r=>parseFloat(r.fontSize)),t.x-a.x-(parseFloat(e.style.getPropertyValue("--hero-subject-shift-x"))||0)+(t.width-y)*u,t.y-a.y+(t.height-l)*h,y,l,h],fonts:o.map(r=>[r.fontStyle,r.fontWeight,r.fontFamily.replace(/["']/g,""),r.fontFeatureSettings,r.letterSpacing==="normal"?"normal":(parseFloat(r.letterSpacing)/parseFloat(r.fontSize)).toFixed(3),r.lineHeight==="normal"?"normal":(parseFloat(r.lineHeight)/parseFloat(r.fontSize)).toFixed(3)].join("|")),regime:[innerWidth<900?0:innerWidth<=1024?1:innerWidth<=1240?2:3,e.clientWidth<=720?0:e.clientWidth<=1024?1:2,h].join("/")}}function J(e){let n=e.querySelector(".hero-flow"),a=n.querySelector(".hero-flow-title");if(!a){a=document.createElement("div"),a.className="hero-flow-title";let t=document.createElement("h1");t.innerHTML=e.querySelector(".hero-copy h1").innerHTML;let o=document.createElement("p");o.className="hero-subtitle",o.innerHTML=e.querySelector(".hero-copy .hero-subtitle").innerHTML,a.append(t,o),n.append(a)}return{flow:n,title:a,lines:[...n.querySelectorAll(".hero-flow-line")]}}function X(e,n){if(e.dataset.heroMode=n.mode,n.mode==="stacked"){Q(e),e.classList.remove("is-hero-flow-pending","is-hero-flow-ready","is-hero-flow-settling");return}let{flow:a,title:t,lines:o}=J(e),i=getComputedStyle(e.querySelector(".hero-copy .lede")),f=e.dataset.heroPixelWords?new Set(e.dataset.heroPixelWords.split(" ")):void 0;for(t.style.scale=String(n.scales?.[0]??1),t.style.left=`${n.title[0]}px`,t.style.top=`${n.title[1]}px`,t.style.maxWidth=`${Math.max(240,n.geometry.box[0]-n.geometry.box[2]*2)}px`;o.length<n.lines.length;){let u=document.createElement("span");u.className="hero-flow-line",o.push(u),a.append(u)}for(;o.length>n.lines.length;)o.pop().remove();n.lines.forEach((u,y)=>{let l=o[y],h=L(u.text,f);l.innerHTML!==h&&(l.innerHTML=h),l.style.left=`${u.x}px`,l.style.top=`${u.y}px`,l.style.width=`${Math.ceil(u.width+2)}px`,l.style.fontStyle=i.fontStyle,l.style.fontWeight=i.fontWeight,l.style.fontSize=i.fontSize,l.style.fontFamily=i.fontFamily,l.style.fontFeatureSettings='"calt" 0, "liga" 0, "ss01" 0',l.style.lineHeight=`${n.geometry.box[3]}px`}),e.style.setProperty("--hero-subject-shift-x",`${n.shift}px`),e.style.setProperty("--hero-subject-scale",String(n.scales?.[1]??1)),e.classList.add("is-hero-flow-ready"),e.classList.remove("is-hero-flow-pending","is-hero-flow-fallback")}function Z(e,n,a,t,o){let i=1/0,f=-1/0,u=Math.floor(n-o)+.5,y=Math.ceil(a+o)+.5,l=e[e.length-1];for(let h of e){let r=Math.max(u,Math.ceil(Math.min(l.y,h.y)-.5)+.5),m=Math.min(y,Math.ceil(Math.max(l.y,h.y)-.5)-.5);if(r<=m){let c=(h.x-l.x)/(h.y-l.y),s=l.x+(r-l.y)*c,p=l.x+(m-l.y)*c;i=Math.min(i,s,p),f=Math.max(f,s,p)}l=h}return Number.isFinite(i)?{left:i-t,right:f+t}:null}function Q(e){e.style.removeProperty("--hero-subject-shift-x"),e.style.removeProperty("--hero-subject-scale")}function Y(e,n,a,t=1){let{box:o}=e;return{x:o[7]+o[9]*n*(1-t)+a,y:o[8]+o[10]*(o[11]??1)*(1-t),width:o[9]*t,height:o[10]*t}}function ee(e,n,a){let{box:t}=e.geometry;if(e.lines.map(r=>r.text).join(" ").replace(/\s+/g," ").trim()!==a)return!1;let o=e.scales??[1,1];if(!o.every(r=>Number.isFinite(r)&&r>0)||t[5]*o[0]<32||t[6]*o[0]<12)return!1;let i=Y(e.geometry,e.anchor,e.shift,o[1]);if(i.x<t[2]-1||i.x+i.width>t[0]-t[2]+1)return!1;let f=n.map(r=>({x:i.x+r.x*i.width,y:i.y+r.y*i.height})),[u,y,l,h]=e.title;return[[u,y,l,h],...e.lines.map(r=>[r.x,r.y,Math.ceil(r.width+2),t[3]])].every(([r,m,c,s],p)=>{if(![r,m,c,s].every(Number.isFinite)||c<=0||s<=0||r<-.5||m<-.5||r+c>t[0]+.5||m+s>t[1]+.5||p&&r<u+l&&r+c>u&&m<y+h&&m+s>y)return!1;let d=Z(f,m,m+s,B(t[3])-1,t[3]/2-1);return!d||r+c<=d.left||r>=d.right})}function te(e,n){return e.regime===n.regime&&e.fonts.every((a,t)=>a===n.fonts[t])&&e.box.every((a,t)=>Math.abs(a-n.box[t])<=.5)}function M(e){if(e.heroLayout||new URLSearchParams(location.search).has("hero-live"))return;let n=e.closest(".hero").querySelector("script[data-hero-presets]"),a=z.get(e.closest("[data-page-kind]").dataset.pageKind);if(!n&&!a)return;let t=K(e),o;if(n){try{o=JSON.parse(n.textContent)}catch{return}if(o.signature!==t&&(o=void 0),o?.stacks.some(([r,m])=>r===innerWidth&&m===innerHeight)){e.dataset.heroMode="stacked",e.dataset.heroPreset="stacked";return}}if(V(e))return;let i=U(e),f=_(e.querySelector(".hero-copy .lede")),u=[];if(a?.signature===t&&u.push(a),o){let r=[],m=o.geometries.map(([s,...p])=>{let d=s.map((x,g)=>(r[g]??0)+x);return r=d,[d.map(x=>x/100),...p]}),c=o.hulls.map(([,s])=>D(s));for(let[s,p,d,x,g,w,P]of o.layouts){let[S,E,T]=m[s],[F,W]=o.patterns[d],C=o.hulls[p][0],v=c[p],R=0,q=0;u.push({signature:t,source:C,hull:v,snapshot:{geometry:{box:S,fonts:o.fonts[E],regime:T},mode:"flow",anchor:o.typography[2],title:x,shift:g,scales:P,textWidths:W.map(b=>b*S[4]),lines:w.map(([b,j,k],N)=>({text:F[N],x:R+=b,y:q+=j,width:k}))}})}}let y=u.find(r=>te(r.snapshot.geometry,i)),l=y;if(!l){let m=function(c){return Math.abs(i.box[0]/c.box[0]-1)+Math.abs(i.box[1]/c.box[1]-1)};var h=m;let r=u.filter(({snapshot:c})=>c.geometry.regime===i.regime&&c.geometry.fonts.every((s,p)=>s===i.fonts[p])&&Math.abs(i.box[0]/c.geometry.box[0]-1)<=.06&&Math.abs(i.box[1]/c.geometry.box[1]-1)<=.12).sort((c,s)=>m(c.snapshot.geometry)-m(s.snapshot.geometry));for(let c of r){let s=c.snapshot,p=i.box[0]/s.geometry.box[0],d=i.box[1]/s.geometry.box[1],x={geometry:i,mode:s.mode,anchor:s.anchor,scales:s.scales,shift:s.shift*p,textWidths:s.textWidths.map(g=>g*i.box[4]/s.geometry.box[4]),title:[Math.max(i.box[2],s.title[0]*p),s.title[1]*d,s.title[2]*Math.max(i.box[5]/s.geometry.box[5],i.box[6]/s.geometry.box[6]),s.title[3]*i.box[5]/s.geometry.box[5]],lines:s.lines.map(g=>({...g,x:g.x*p,y:g.y*d,width:g.width*i.box[4]/s.geometry.box[4]}))};if(ee(x,c.hull,f)){l={...c,snapshot:x};break}}}if(l)return X(e,l.snapshot),e.heroLayout=l,e.dataset.heroPreset=y?"exact":"nearby",y?"exact":"nearby"}window.__exverbaiHero=M;})();
+</script><div class="hero-stage viewport-tile__stage major-tile main-tile-surface" style="--hero-optical-anchor:0.62;--hero-image-ratio:1.2239583333333333;--hero-title-em:3.8592;--hero-subtitle-em:16.2344;--hero-optical-anchor:0.62">
+            <script>document.currentScript.parentElement.dataset.heroDeadline = String(performance.now() + 1500);</script>
+            <div class="hero-bg" aria-hidden="true">
+              <div class="hero-gradient"></div>
+              <picture class="hero-subject-frame">
+                <source
+                  type="image/avif"
+                  srcset="./images/exverbai-hero-subject-inspyrenet-512.avif 512w, ./images/exverbai-hero-subject-inspyrenet-640.avif 640w, ./images/exverbai-hero-subject-inspyrenet-864.avif 864w, ./images/exverbai-hero-subject-inspyrenet-960.avif 960w, ./images/exverbai-hero-subject-inspyrenet-1200.avif 1200w"
+                  sizes="(max-width: 720px) 54vw, (max-width: 2200px) 33vw, 33.25vw"
+                />
+                <img
+                  class="hero-subject"
+                  data-optical-anchor="0.62"
+                  src="./images/exverbai-hero-subject-inspyrenet-640.webp"
+                  srcset="./images/exverbai-hero-subject-inspyrenet-512.webp 512w, ./images/exverbai-hero-subject-inspyrenet-640.webp 640w, ./images/exverbai-hero-subject-inspyrenet-864.webp 864w, ./images/exverbai-hero-subject-inspyrenet-960.webp 960w, ./images/exverbai-hero-subject-inspyrenet-1200.webp 1200w"
+                  sizes="(max-width: 720px) 54vw, (max-width: 2200px) 33vw, 33.25vw"
+                  alt=""
+                  loading="eager"
+                  decoding="sync"
+                  fetchpriority="high"
+                  width="960"
+                  height="1175"
+                />
+              </picture>
+            </div>
+            <div class="hero-ascii-ripple" aria-hidden="true"></div>
+            <div class="hero-copy">
+              <div class="hero-title-stack">
+                <h1 id="hero-title">
+                  <span class="alpha-mixed brand-wordmark" role="img" aria-label="exverbai"><span class="alpha-pixel brand-wordmark-ex" aria-hidden="true">ex</span><span aria-hidden="true">verb</span><span class="alpha-pixel brand-wordmark-ai" aria-hidden="true">ai</span></span>
+                </h1>
+                <p class="hero-subtitle">AI <span class="hero-subtitle-dot">▪</span> ML <span class="hero-subtitle-dot">▪</span> Data <span class="hero-subtitle-dot">▪</span> Backend</p>
+              </div>
+              <p class="lede">We turn <span class="alpha-pixel">A</span><span class="alpha-pixel">I</span> from demo to pr<span class="alpha-pixel">o</span>d<span class="alpha-pixel">u</span>ct<span class="alpha-pixel">i</span><span class="alpha-pixel">o</span>n: validated m<span class="alpha-pixel">o</span>d<span class="alpha-pixel">e</span>ls, autonomous <span class="alpha-pixel">a</span>g<span class="alpha-pixel">e</span>nts, and scalable b<span class="alpha-pixel">a</span>ck<span class="alpha-pixel">e</span>nds that move the metrics that m<span class="alpha-pixel">a</span>tt<span class="alpha-pixel">e</span>r.</p>
+            </div>
+            <div class="hero-flow" aria-hidden="true"></div><script>window.__exverbaiHero(document.currentScript.parentElement);delete window.__exverbaiHero;</script>
+          </div>
+        </section>
+    <section class="trusted-stage" aria-labelledby="trusted-title">
+      <div class="trusted-frame major-tile main-tile-surface">
+        <div class="trusted-heading">
+          <button class="eyebrow motion-toggle" type="button" data-motion-target="trusted-clients" aria-controls="trusted-clients" aria-label="Pause Clients animation" aria-pressed="false" aria-describedby="clients-motion-help" disabled>Clients<span class="motion-hint" id="clients-motion-help">Enter or Space to pause / resume</span></button>
+          <h2 id="trusted-title">Trusted by teams, labs, and institutions.</h2>
+        </div>
+        <div class="trusted-marquee" id="trusted-clients">
+          <div class="trusted-marquee-viewport" role="region" aria-label="Client organizations" tabindex="0">
+            <div class="trusted-marquee-content">
+              <ul class="trusted-track">
+                
+        <li class="trusted-logo" data-logo="kuleuven" style="--trusted-logo-fit: 59.2%; --trusted-logo-max-height: 7.96%;">
+          <img
+            src="./logos/trusted/kuleuven.svg"
+            
+            alt="KU Leuven"
+            loading="lazy"
+            decoding="async"
+            fetchpriority="low"
+            width="640"
+            height="86"
+          />
+        </li>
+      
+        <li class="trusted-logo" data-logo="reimagine" style="--trusted-logo-fit: 80%; --trusted-logo-max-height: 13.81%;">
+          <img
+            src="./logos/trusted/reimagine.webp"
+            srcset="./logos/trusted/reimagine-256.webp 256w, ./logos/trusted/reimagine.webp 452w" sizes="(max-width: 720px) 134px, 186px"
+            alt="Reimagine"
+            loading="lazy"
+            decoding="async"
+            fetchpriority="low"
+            width="452"
+            height="78"
+          />
+        </li>
+      
+        <li class="trusted-logo" data-logo="investsuite" style="--trusted-logo-fit: 80%; --trusted-logo-max-height: 8.5%;">
+          <img
+            src="./logos/trusted/investsuite.svg"
+            
+            alt="InvestSuite"
+            loading="lazy"
+            decoding="async"
+            fetchpriority="low"
+            width="640"
+            height="68"
+          />
+        </li>
+      
+        <li class="trusted-logo" data-logo="vub" style="--trusted-logo-fit: 74.45%; --trusted-logo-max-height: 25.94%;">
+          <img
+            src="./logos/trusted/vub.svg"
+            
+            alt="VUB"
+            loading="lazy"
+            decoding="async"
+            fetchpriority="low"
+            width="640"
+            height="223"
+          />
+        </li>
+      
+        <li class="trusted-logo" data-logo="govrn" style="--trusted-logo-fit: 59.2%; --trusted-logo-max-height: 20.07%;">
+          <img
+            src="./logos/trusted/govrn.webp"
+            srcset="./logos/trusted/govrn-256.webp 256w, ./logos/trusted/govrn.webp 640w" sizes="(max-width: 720px) 134px, 186px"
+            alt="Govrn"
+            loading="lazy"
+            decoding="async"
+            fetchpriority="low"
+            width="640"
+            height="217"
+          />
+        </li>
+      
+        <li class="trusted-logo" data-logo="sentometrics" style="--trusted-logo-fit: 80%; --trusted-logo-max-height: 11.5%;">
+          <img
+            src="./logos/trusted/sentometrics.svg"
+            
+            alt="Sentometrics"
+            loading="lazy"
+            decoding="async"
+            fetchpriority="low"
+            width="640"
+            height="92"
+          />
+        </li>
+      
+        <li class="trusted-logo" data-logo="ugent" style="--trusted-logo-fit: 58.6%; --trusted-logo-max-height: 44.77%;">
+          <img
+            src="./logos/trusted/ugent.svg"
+            
+            alt="UGent"
+            loading="lazy"
+            decoding="async"
+            fetchpriority="low"
+            width="640"
+            height="489"
+          />
+        </li>
+      
+        <li class="trusted-logo" data-logo="guidnce" style="--trusted-logo-fit: 72.48%; --trusted-logo-max-height: 19.37%;">
+          <img
+            src="./logos/trusted/guidnce.svg"
+            
+            alt="Guidnce"
+            loading="lazy"
+            decoding="async"
+            fetchpriority="low"
+            width="116"
+            height="31"
+          />
+        </li>
+      
+        <li class="trusted-logo" data-logo="world-bank" style="--trusted-logo-fit: 80%; --trusted-logo-max-height: 15.75%;">
+          <img
+            src="./logos/trusted/world-bank.svg"
+            
+            alt="The World Bank"
+            loading="lazy"
+            decoding="async"
+            fetchpriority="low"
+            width="640"
+            height="126"
+          />
+        </li>
+      
+        <li class="trusted-logo" data-logo="scale" style="--trusted-logo-fit: 69.77%; --trusted-logo-max-height: 13.26%;">
+          <img
+            src="./logos/trusted/scale.svg"
+            
+            alt="Scale"
+            loading="lazy"
+            decoding="async"
+            fetchpriority="low"
+            width="600"
+            height="114"
+          />
+        </li>
+      
+        <li class="trusted-logo" data-logo="outlier" style="--trusted-logo-fit: 59.2%; --trusted-logo-max-height: 15.69%;">
+          <img
+            src="./logos/trusted/outlier.svg"
+            
+            alt="Outlier"
+            loading="lazy"
+            decoding="async"
+            fetchpriority="low"
+            width="83"
+            height="22"
+          />
+        </li>
+      
+        <li class="trusted-logo" data-logo="studia" style="--trusted-logo-fit: 62.72%; --trusted-logo-max-height: 18.4%;">
+          <img
+            src="./logos/trusted/studia.svg"
+            
+            alt="Studia Health"
+            loading="lazy"
+            decoding="async"
+            fetchpriority="low"
+            width="600"
+            height="176"
+          />
+        </li>
+      
+              </ul>
+              <ul class="trusted-track" aria-hidden="true">
+                
+        <li class="trusted-logo" data-logo="kuleuven" style="--trusted-logo-fit: 59.2%; --trusted-logo-max-height: 7.96%;">
+          <img
+            src="./logos/trusted/kuleuven.svg"
+            
+            alt="KU Leuven"
+            loading="lazy"
+            decoding="async"
+            fetchpriority="low"
+            width="640"
+            height="86"
+          />
+        </li>
+      
+        <li class="trusted-logo" data-logo="reimagine" style="--trusted-logo-fit: 80%; --trusted-logo-max-height: 13.81%;">
+          <img
+            src="./logos/trusted/reimagine.webp"
+            srcset="./logos/trusted/reimagine-256.webp 256w, ./logos/trusted/reimagine.webp 452w" sizes="(max-width: 720px) 134px, 186px"
+            alt="Reimagine"
+            loading="lazy"
+            decoding="async"
+            fetchpriority="low"
+            width="452"
+            height="78"
+          />
+        </li>
+      
+        <li class="trusted-logo" data-logo="investsuite" style="--trusted-logo-fit: 80%; --trusted-logo-max-height: 8.5%;">
+          <img
+            src="./logos/trusted/investsuite.svg"
+            
+            alt="InvestSuite"
+            loading="lazy"
+            decoding="async"
+            fetchpriority="low"
+            width="640"
+            height="68"
+          />
+        </li>
+      
+        <li class="trusted-logo" data-logo="vub" style="--trusted-logo-fit: 74.45%; --trusted-logo-max-height: 25.94%;">
+          <img
+            src="./logos/trusted/vub.svg"
+            
+            alt="VUB"
+            loading="lazy"
+            decoding="async"
+            fetchpriority="low"
+            width="640"
+            height="223"
+          />
+        </li>
+      
+        <li class="trusted-logo" data-logo="govrn" style="--trusted-logo-fit: 59.2%; --trusted-logo-max-height: 20.07%;">
+          <img
+            src="./logos/trusted/govrn.webp"
+            srcset="./logos/trusted/govrn-256.webp 256w, ./logos/trusted/govrn.webp 640w" sizes="(max-width: 720px) 134px, 186px"
+            alt="Govrn"
+            loading="lazy"
+            decoding="async"
+            fetchpriority="low"
+            width="640"
+            height="217"
+          />
+        </li>
+      
+        <li class="trusted-logo" data-logo="sentometrics" style="--trusted-logo-fit: 80%; --trusted-logo-max-height: 11.5%;">
+          <img
+            src="./logos/trusted/sentometrics.svg"
+            
+            alt="Sentometrics"
+            loading="lazy"
+            decoding="async"
+            fetchpriority="low"
+            width="640"
+            height="92"
+          />
+        </li>
+      
+        <li class="trusted-logo" data-logo="ugent" style="--trusted-logo-fit: 58.6%; --trusted-logo-max-height: 44.77%;">
+          <img
+            src="./logos/trusted/ugent.svg"
+            
+            alt="UGent"
+            loading="lazy"
+            decoding="async"
+            fetchpriority="low"
+            width="640"
+            height="489"
+          />
+        </li>
+      
+        <li class="trusted-logo" data-logo="guidnce" style="--trusted-logo-fit: 72.48%; --trusted-logo-max-height: 19.37%;">
+          <img
+            src="./logos/trusted/guidnce.svg"
+            
+            alt="Guidnce"
+            loading="lazy"
+            decoding="async"
+            fetchpriority="low"
+            width="116"
+            height="31"
+          />
+        </li>
+      
+        <li class="trusted-logo" data-logo="world-bank" style="--trusted-logo-fit: 80%; --trusted-logo-max-height: 15.75%;">
+          <img
+            src="./logos/trusted/world-bank.svg"
+            
+            alt="The World Bank"
+            loading="lazy"
+            decoding="async"
+            fetchpriority="low"
+            width="640"
+            height="126"
+          />
+        </li>
+      
+        <li class="trusted-logo" data-logo="scale" style="--trusted-logo-fit: 69.77%; --trusted-logo-max-height: 13.26%;">
+          <img
+            src="./logos/trusted/scale.svg"
+            
+            alt="Scale"
+            loading="lazy"
+            decoding="async"
+            fetchpriority="low"
+            width="600"
+            height="114"
+          />
+        </li>
+      
+        <li class="trusted-logo" data-logo="outlier" style="--trusted-logo-fit: 59.2%; --trusted-logo-max-height: 15.69%;">
+          <img
+            src="./logos/trusted/outlier.svg"
+            
+            alt="Outlier"
+            loading="lazy"
+            decoding="async"
+            fetchpriority="low"
+            width="83"
+            height="22"
+          />
+        </li>
+      
+        <li class="trusted-logo" data-logo="studia" style="--trusted-logo-fit: 62.72%; --trusted-logo-max-height: 18.4%;">
+          <img
+            src="./logos/trusted/studia.svg"
+            
+            alt="Studia Health"
+            loading="lazy"
+            decoding="async"
+            fetchpriority="low"
+            width="600"
+            height="176"
+          />
+        </li>
+      
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    <section class="about-section" id="about" aria-labelledby="about-title">
+      <div class="about-band major-tile main-tile-surface">
+        <picture class="content-picture">
+          <source media="(max-width: 1024px)" type="image/avif" srcset="/images/about-portrait-body-640.avif 640w, /images/about-portrait-body-960.avif 960w, /images/about-portrait-body-1600.avif 1600w, /images/about-portrait-body-2160.avif 2160w" sizes="auto, (max-width: 1024px) 100vw, 1103px" />
+          <source media="(max-width: 1024px)" type="image/webp" srcset="/images/about-portrait-body-640.webp 640w, /images/about-portrait-body-960.webp 960w, /images/about-portrait-body-1600.webp 1600w, /images/about-portrait-body-2160.webp 2160w" sizes="auto, (max-width: 1024px) 100vw, 1103px" />
+          <source type="image/avif" srcset="/images/about-stage-900.avif 900w, /images/about-stage-1600.avif 1600w, /images/about-stage-2560.avif 2560w, /images/about-stage-3840.avif 3840w" sizes="auto, (max-width: 1024px) 100vw, 1103px" />
+          <img src="/images/about-stage-900.webp" srcset="/images/about-stage-900.webp 900w, /images/about-stage-1600.webp 1600w, /images/about-stage-2560.webp 2560w, /images/about-stage-3840.webp 3840w" sizes="auto, (max-width: 1024px) 100vw, 1103px" alt="" loading="lazy" decoding="async" fetchpriority="low" width="900" height="375" />
+        </picture>
+        <div class="about-title-glass glass-panel">
+          <h2 id="about-title">about</h2>
+          <p class="about-band-copy">
+            At <span class="alpha-mixed brand-wordmark" role="img" aria-label="exverbai"><span class="alpha-pixel brand-wordmark-ex" aria-hidden="true">ex</span><span aria-hidden="true">verb</span><span class="alpha-pixel brand-wordmark-ai" aria-hidden="true">ai</span></span>, we combine sharp AI engineering with production discipline:
+            reliable backend systems, clean data flows, and measurable model behavior.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="services-stage" id="services" aria-labelledby="services-title">
+      <h2 class="visually-hidden" id="services-title">Services and milestones</h2>
+      <div class="services-frame major-tile">
+        <div
+          class="service-card-stage main-tile-surface"
+          id="service-carousel"
+          data-service-rotator
+          data-service-index="0"
+          data-service-phase="static"
+          role="group"
+          aria-label="Services"
+          tabindex="0"
+        >
+          <button class="eyebrow motion-toggle" type="button" data-motion-target="service-carousel" aria-controls="service-carousel" aria-label="Pause Services animation" aria-pressed="false" aria-describedby="services-motion-help" disabled>Services<span class="motion-hint" id="services-motion-help">Enter or Space to pause / resume</span></button>
+          <div class="services-tile-content">
+            <div class="service-media" aria-hidden="true">
+              <img
+                class="service-image is-active"
+                data-service-image="front"
+                src="./images/service-ai-ml-520.webp"
+                alt=""
+                loading="lazy"
+                decoding="async"
+                fetchpriority="low"
+                width="520"
+                height="649"
+              />
+              <img
+                class="service-image"
+                data-service-image="back"
+                src="./images/service-ai-ml-520.webp"
+                alt=""
+                loading="lazy"
+                decoding="async"
+                width="520"
+                height="649"
+              />
+              <canvas class="service-pixel-canvas"></canvas>
+            </div>
+            <div class="service-copy" aria-hidden="true">
+              <h3 class="service-title">AI &amp; ML Engineering</h3>
+              <p class="service-description">Production-grade models, agents, retrieval systems, and evaluation loops built around real workflows and measurable outcomes.</p>
+            </div>
+          </div>
+          <ul class="service-accessible-list" tabindex="0">
+            
+        <li>
+          <strong>AI &amp; ML Engineering</strong>
+          <span>Production-grade models, agents, retrieval systems, and evaluation loops built around real workflows and measurable outcomes.</span>
+        </li>
+      
+        <li>
+          <strong>Infrastructure &amp; MLOps</strong>
+          <span>Reliable deployment, observability, data pipelines, and model operations that keep intelligent systems fast, traceable, and maintainable.</span>
+        </li>
+      
+        <li>
+          <strong>Roadmapping &amp; Funding</strong>
+          <span>Technical strategy, architecture, scope, and funding narratives that turn ambitious AI ideas into credible delivery plans.</span>
+        </li>
+      
+        <li>
+          <strong>Software Backend Engineering</strong>
+          <span>Scalable APIs, services, integrations, and data systems engineered as a dependable foundation for durable product growth.</span>
+        </li>
+      
+          </ul>
+        </div>
+        <div class="metrics-card-stage main-tile-surface">
+          <p class="eyebrow">Milestones</p>
+          <div class="services-tile-content">
+          
+            <div class="metric-row">
+              <strong><span class="visually-hidden">11+</span><span data-milestone-target="11" aria-hidden="true">11+</span></strong>
+              <span>Years building production systems</span>
+            </div>
+          
+            <div class="metric-row">
+              <strong><span class="visually-hidden">20+</span><span data-milestone-target="20" aria-hidden="true">20+</span></strong>
+              <span>AI, backend, and data projects</span>
+            </div>
+          
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects-section" id="projects" aria-labelledby="projects-title">
+      <h2 class="visually-hidden" id="projects-title">Selected projects</h2>
+      <div class="project-grid major-tile">
+        
+        <article class="project-card">
+          <a class="project-link" href="/projects/sentivent-financial-event-extraction/" aria-describedby="project-description-sentivent-financial-event-extraction">
+            <div class="project-art main-tile-surface">
+              <picture class="content-picture"><source type="image/avif" srcset="/images/editorial-v3-sentivent-cover-1200-640.avif 640w, /images/editorial-v3-sentivent-cover-1200-960.avif 960w, /images/editorial-v3-sentivent-cover-1200.avif 1200w" sizes="(max-width: 700px) calc(100vw - 28px), (max-width: 1024px) 100vw, 42vw" /><img src="/images/editorial-v3-sentivent-cover-1200.webp" srcset="/images/editorial-v3-sentivent-cover-1200-640.webp 640w, /images/editorial-v3-sentivent-cover-1200-960.webp 960w, /images/editorial-v3-sentivent-cover-1200.webp 1200w" sizes="(max-width: 700px) calc(100vw - 28px), (max-width: 1024px) 100vw, 42vw" alt="" width="1200" height="800" loading="lazy" decoding="async" fetchpriority="low" /></picture>
+              <div class="project-overlay glass-panel">
+                <div class="project-caption">
+                  <p class="eyebrow">Research</p>
+                  <h3 id="project-title-sentivent-financial-event-extraction"><span class="alpha-mixed">Ev<span class="alpha-pixel">e</span>nt sign<span class="alpha-pixel">a</span>ls</span></h3>
+                </div>
+                <span class="glass-badge glass-panel project-read-more" aria-hidden="true">Read more <span aria-hidden="true">+</span></span>
+              </div>
+            </div>
+            <span hidden id="project-description-sentivent-financial-event-extraction">SENTiVENT: reading what financial news really says</span>
+          </a>
+        </article>
+        <article class="project-card">
+          <a class="project-link" href="/projects/customer-service-ai-coaching/" aria-describedby="project-description-customer-service-ai-coaching">
+            <div class="project-art main-tile-surface">
+              <picture class="content-picture"><source type="image/avif" srcset="/images/editorial-v3-coaching-cover-1200-640.avif 640w, /images/editorial-v3-coaching-cover-1200-960.avif 960w, /images/editorial-v3-coaching-cover-1200.avif 1200w" sizes="(max-width: 700px) calc(100vw - 28px), (max-width: 1024px) 100vw, 42vw" /><img src="/images/editorial-v3-coaching-cover-1200.webp" srcset="/images/editorial-v3-coaching-cover-1200-640.webp 640w, /images/editorial-v3-coaching-cover-1200-960.webp 960w, /images/editorial-v3-coaching-cover-1200.webp 1200w" sizes="(max-width: 700px) calc(100vw - 28px), (max-width: 1024px) 100vw, 42vw" alt="" width="1200" height="800" loading="lazy" decoding="async" fetchpriority="low" /></picture>
+              <div class="project-overlay glass-panel">
+                <div class="project-caption">
+                  <p class="eyebrow">Customer service</p>
+                  <h3 id="project-title-customer-service-ai-coaching"><span class="alpha-mixed">AI c<span class="alpha-pixel">o</span>aching</span></h3>
+                </div>
+                <span class="glass-badge glass-panel project-read-more" aria-hidden="true">Read more <span aria-hidden="true">+</span></span>
+              </div>
+            </div>
+            <span hidden id="project-description-customer-service-ai-coaching">Turning customer conversations into useful coaching</span>
+          </a>
+        </article>
+        <article class="project-card">
+          <a class="project-link" href="/projects/clinical-writing-rag-assistant/" aria-describedby="project-description-clinical-writing-rag-assistant">
+            <div class="project-art main-tile-surface">
+              <picture class="content-picture"><source type="image/avif" srcset="/images/editorial-v3-clinical-writing-cover-1200-640.avif 640w, /images/editorial-v3-clinical-writing-cover-1200-960.avif 960w, /images/editorial-v3-clinical-writing-cover-1200.avif 1200w" sizes="(max-width: 700px) calc(100vw - 28px), (max-width: 1024px) 100vw, 42vw" /><img src="/images/editorial-v3-clinical-writing-cover-1200.webp" srcset="/images/editorial-v3-clinical-writing-cover-1200-640.webp 640w, /images/editorial-v3-clinical-writing-cover-1200-960.webp 960w, /images/editorial-v3-clinical-writing-cover-1200.webp 1200w" sizes="(max-width: 700px) calc(100vw - 28px), (max-width: 1024px) 100vw, 42vw" alt="" width="1200" height="800" loading="lazy" decoding="async" fetchpriority="low" /></picture>
+              <div class="project-overlay glass-panel">
+                <div class="project-caption">
+                  <p class="eyebrow">Clinical AI</p>
+                  <h3 id="project-title-clinical-writing-rag-assistant"><span class="alpha-mixed">Cl<span class="alpha-pixel">i</span>n<span class="alpha-pixel">i</span>cal wr<span class="alpha-pixel">i</span>t<span class="alpha-pixel">i</span>ng</span></h3>
+                </div>
+                <span class="glass-badge glass-panel project-read-more" aria-hidden="true">Read more <span aria-hidden="true">+</span></span>
+              </div>
+            </div>
+            <span hidden id="project-description-clinical-writing-rag-assistant">An AI assistant for the work behind clinical documents</span>
+          </a>
+        </article>
+        <article class="project-card">
+          <a class="project-link" href="/projects/financial-news-esg-intelligence/" aria-describedby="project-description-financial-news-esg-intelligence">
+            <div class="project-art main-tile-surface">
+              <picture class="content-picture"><source type="image/avif" srcset="/images/editorial-v3-financial-intelligence-cover-1200-640.avif 640w, /images/editorial-v3-financial-intelligence-cover-1200-960.avif 960w, /images/editorial-v3-financial-intelligence-cover-1200.avif 1200w" sizes="(max-width: 700px) calc(100vw - 28px), (max-width: 1024px) 100vw, 42vw" /><img src="/images/editorial-v3-financial-intelligence-cover-1200.webp" srcset="/images/editorial-v3-financial-intelligence-cover-1200-640.webp 640w, /images/editorial-v3-financial-intelligence-cover-1200-960.webp 960w, /images/editorial-v3-financial-intelligence-cover-1200.webp 1200w" sizes="(max-width: 700px) calc(100vw - 28px), (max-width: 1024px) 100vw, 42vw" alt="" width="1200" height="800" loading="lazy" decoding="async" fetchpriority="low" /></picture>
+              <div class="project-overlay glass-panel">
+                <div class="project-caption">
+                  <p class="eyebrow">Financial NLP</p>
+                  <h3 id="project-title-financial-news-esg-intelligence"><span class="alpha-mixed">N<span class="alpha-pixel">e</span>ws sign<span class="alpha-pixel">a</span>ls</span></h3>
+                </div>
+                <span class="glass-badge glass-panel project-read-more" aria-hidden="true">Read more <span aria-hidden="true">+</span></span>
+              </div>
+            </div>
+            <span hidden id="project-description-financial-news-esg-intelligence">Connecting financial news to ESG and compliance intelligence</span>
+          </a>
+        </article>
+      </div>
+    </section>
+
+    <section class="journal-section major-tile main-tile-surface" id="blog" aria-labelledby="blog-title">
+      <div class="section-heading">
+        <p class="section-label"><a href="/blog/">Blog</a></p>
+        <h2 id="blog-title">Our blog is where engineering work becomes lessons.</h2>
+      </div>
+      <div class="journal-grid">
+        
+        <article class="journal-card">
+          <a class="journal-link" href="/blog/local-ai-for-business/" aria-describedby="journal-description-local-ai-for-business">
+            <div class="journal-media">
+              <picture class="content-picture"><source type="image/avif" srcset="/images/editorial-v3-local-ai-cover-1200-640.avif 640w, /images/editorial-v3-local-ai-cover-1200-960.avif 960w, /images/editorial-v3-local-ai-cover-1200.avif 1200w" sizes="(max-width: 700px) calc(100vw - 28px), (max-width: 1024px) 48vw, 33vw" /><img src="/images/editorial-v3-local-ai-cover-1200.webp" srcset="/images/editorial-v3-local-ai-cover-1200-640.webp 640w, /images/editorial-v3-local-ai-cover-1200-960.webp 960w, /images/editorial-v3-local-ai-cover-1200.webp 1200w" sizes="(max-width: 700px) calc(100vw - 28px), (max-width: 1024px) 48vw, 33vw" alt="" width="1200" height="800" loading="lazy" decoding="async" fetchpriority="low" /></picture>
+              <span class="card-open glass-panel" aria-hidden="true"><span>+</span></span>
+            </div>
+            <h3 id="journal-title-local-ai-for-business"><span class="alpha-mixed">AI, cl<span class="alpha-pixel">o</span>ser to h<span class="alpha-pixel">o</span>me.</span></h3>
+            <span class="eyebrow">01 / AI strategy</span>
+            <span hidden id="journal-description-local-ai-for-business">Local AI for business: when on-premises LLMs make sense</span>
+          </a>
+        </article>
+        <article class="journal-card">
+          <a class="journal-link" href="/blog/agentic-rag-production/" aria-describedby="journal-description-agentic-rag-production">
+            <div class="journal-media">
+              <picture class="content-picture"><source type="image/avif" srcset="/images/editorial-v3-agentic-rag-cover-1200-640.avif 640w, /images/editorial-v3-agentic-rag-cover-1200-960.avif 960w, /images/editorial-v3-agentic-rag-cover-1200.avif 1200w" sizes="(max-width: 700px) calc(100vw - 28px), (max-width: 1024px) 48vw, 33vw" /><img src="/images/editorial-v3-agentic-rag-cover-1200.webp" srcset="/images/editorial-v3-agentic-rag-cover-1200-640.webp 640w, /images/editorial-v3-agentic-rag-cover-1200-960.webp 960w, /images/editorial-v3-agentic-rag-cover-1200.webp 1200w" sizes="(max-width: 700px) calc(100vw - 28px), (max-width: 1024px) 48vw, 33vw" alt="" width="1200" height="800" loading="lazy" decoding="async" fetchpriority="low" /></picture>
+              <span class="card-open glass-panel" aria-hidden="true"><span>+</span></span>
+            </div>
+            <h3 id="journal-title-agentic-rag-production"><span class="alpha-mixed">R<span class="alpha-pixel">e</span>tri<span class="alpha-pixel">e</span>val with a purp<span class="alpha-pixel">o</span>se.</span></h3>
+            <span class="eyebrow">02 / Applied AI</span>
+            <span hidden id="journal-description-agentic-rag-production">Agentic RAG in production: better retrieval, measurable answers</span>
+          </a>
+        </article>
+        <article class="journal-card">
+          <a class="journal-link" href="/blog/business-intelligence-agents/" aria-describedby="journal-description-business-intelligence-agents">
+            <div class="journal-media">
+              <picture class="content-picture"><source type="image/avif" srcset="/images/editorial-v3-business-intelligence-cover-1200-640.avif 640w, /images/editorial-v3-business-intelligence-cover-1200-960.avif 960w, /images/editorial-v3-business-intelligence-cover-1200.avif 1200w" sizes="(max-width: 700px) calc(100vw - 28px), (max-width: 1024px) 48vw, 33vw" /><img src="/images/editorial-v3-business-intelligence-cover-1200.webp" srcset="/images/editorial-v3-business-intelligence-cover-1200-640.webp 640w, /images/editorial-v3-business-intelligence-cover-1200-960.webp 960w, /images/editorial-v3-business-intelligence-cover-1200.webp 1200w" sizes="(max-width: 700px) calc(100vw - 28px), (max-width: 1024px) 48vw, 33vw" alt="" width="1200" height="800" loading="lazy" decoding="async" fetchpriority="low" /></picture>
+              <span class="card-open glass-panel" aria-hidden="true"><span>+</span></span>
+            </div>
+            <h3 id="journal-title-business-intelligence-agents"><span class="alpha-mixed">M<span class="alpha-pixel">a</span>ke your numb<span class="alpha-pixel">e</span>rs sp<span class="alpha-pixel">e</span>ak.</span></h3>
+            <span class="eyebrow">03 / Data &amp; intelligence</span>
+            <span hidden id="journal-description-business-intelligence-agents">Business intelligence agents need a shared definition of the numbers</span>
+          </a>
+        </article>
+      </div>
+    </section>
+
+</main><div class="contact-footer" id="contact" tabindex="-1">
+    <section class="contact" aria-labelledby="contact-title">
+      <div class="contact-panel viewport-tile__stage major-tile main-tile-surface">
+        <picture class="content-picture">
+          <source type="image/avif" srcset="/images/contact-verdigris-v6-640.avif 640w, /images/contact-verdigris-v6-960.avif 960w, /images/contact-verdigris-v6-1600.avif 1600w, /images/contact-verdigris-v6-2560.avif 2560w, /images/contact-verdigris-v6-3840.avif 3840w" sizes="auto, 100vw" />
+          <img src="/images/contact-verdigris-v6-960.webp" srcset="/images/contact-verdigris-v6-640.webp 640w, /images/contact-verdigris-v6-960.webp 960w, /images/contact-verdigris-v6-1600.webp 1600w, /images/contact-verdigris-v6-2560.webp 2560w, /images/contact-verdigris-v6-3840.webp 3840w" sizes="auto, 100vw" alt="" loading="lazy" decoding="async" fetchpriority="low" width="960" height="540" />
+        </picture>
+        <div>
+          <p class="eyebrow">Availability</p>
+          <h2 id="contact-title"><span class="alpha-mixed">get in t<span class="alpha-pixel">o</span>uch</span></h2>
+          <p>Tell us what you need to automate, validate, improve, or ship. We will map the practical path for your AI, data, backend, or technical strategy.</p>
+        </div>
+        <form class="contact-form glass-panel" aria-labelledby="contact-title" action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="cabd39af-dfd3-452a-8094-4449d3b0cf55" />
+          <input type="hidden" name="subject" value="New exverbai project signal" />
+          <input type="hidden" name="from_name" value="exverbai website" />
+          <input type="hidden" name="redirect" value="https://exverb.ai/thanks.html" />
+          <input class="contact-botcheck" type="checkbox" name="botcheck" tabindex="-1" aria-hidden="true" />
+          <div class="contact-field">
+            <label for="contact-email">Email</label>
+            <div class="contact-control contact-control-email">
+              <input id="contact-email" name="email" type="email" autocomplete="email" placeholder="you@company.com" required />
+            </div>
+          </div>
+          <div class="contact-field">
+            <label for="contact-message">Message</label>
+            <div class="contact-control contact-control-message">
+              <textarea id="contact-message" name="message" rows="5" minlength="20" placeholder="What are you building? (20 characters minimum)" aria-describedby="contact-message-help" required></textarea>
+            </div>
+            <span class="visually-hidden" id="contact-message-help">Use at least 20 characters.</span>
+          </div>
+          <button class="button button-primary contact-submit contact-action-glass" type="submit">
+            <span class="contact-submit-content">
+              <span class="contact-submit-label">Send</span>
+              <span class="contact-chevron-symbol" aria-hidden="true"></span>
+            </span>
+          </button>
+        </form>
+      </div>
+    </section>
+  <footer class="major-tile main-tile-surface" aria-label="Site footer">
+    <div class="footer-email-block">
+      <span class="eyebrow">email us</span>
+      <a class="footer-email" href="mailto:info@exverb.ai" aria-label="Email info@exverb.ai"><span aria-hidden="true">info@</span><span class="footer-email-domain" aria-hidden="true"><span class="alpha-pixel footer-email-ex">ex</span><span>verb.</span><span class="alpha-pixel">ai</span></span></a>
+    </div>
+    <a class="footer-brand" href="#top" aria-label="exverbai, back to top">
+      <img src="/logo.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" width="164" height="164" />
+      <span class="alpha-mixed brand-wordmark" role="img" aria-label="exverbai"><span class="alpha-pixel brand-wordmark-ex" aria-hidden="true">ex</span><span aria-hidden="true">verb</span><span class="alpha-pixel brand-wordmark-ai" aria-hidden="true">ai</span></span>
+    </a>
+    <div class="footer-social" role="group" aria-labelledby="footer-social-title">
+      <span class="eyebrow" id="footer-social-title">Find us on</span>
+      <div class="footer-social-links">
+        <a class="footer-social-link" href="https://linkedin.com/company/exverbai" target="_blank" rel="me noopener noreferrer" aria-label="LinkedIn" title="LinkedIn">
+          <span class="footer-social-icon footer-social-icon-linkedin" aria-hidden="true"></span>
+        </a>
+        <a class="footer-social-link" href="https://huggingface.co/GillesJacobs/datasets" target="_blank" rel="me noopener noreferrer" aria-label="Hugging Face" title="Hugging Face">
+          <span class="footer-social-icon footer-social-icon-huggingface" aria-hidden="true"></span>
+        </a>
+        <a class="footer-social-link" href="https://github.com/gillesj" target="_blank" rel="me noopener noreferrer" aria-label="GitHub" title="GitHub">
+          <span class="footer-social-icon footer-social-icon-github" aria-hidden="true"></span>
+        </a>
+        <a class="footer-social-link" href="https://x.com/gillesmjacobs" target="_blank" rel="me noopener noreferrer" aria-label="X" title="X">
+          <span class="footer-social-icon footer-social-icon-x" aria-hidden="true"></span>
+        </a>
+        <a class="footer-social-link" href="https://www.youtube.com/@gillesjacobs1907" target="_blank" rel="me noopener noreferrer" aria-label="YouTube" title="YouTube">
+          <span class="footer-social-icon footer-social-icon-youtube" aria-hidden="true"></span>
+        </a>
+        <a class="footer-social-link" href="https://orcid.org/0000-0001-8846-3015" target="_blank" rel="me noopener noreferrer" aria-label="ORCID" title="ORCID">
+          <span class="footer-social-icon footer-social-icon-orcid" aria-hidden="true"></span>
+        </a></div>
+    </div>
+  </footer></div>
+      </div>
+    </div><div id="page-announcement" class="visually-hidden" role="status" aria-live="polite"></div></body>
+</html>

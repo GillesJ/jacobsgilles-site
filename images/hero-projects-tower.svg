@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="1175" viewBox="0 0 960 1175">
+  <defs>
+    <linearGradient id="stone"><stop stop-color="#747d6f"/><stop offset=".24" stop-color="#c4c8b9"/><stop offset=".48" stop-color="#f0ecdb"/><stop offset=".73" stop-color="#bdc2af"/><stop offset="1" stop-color="#687665"/></linearGradient>
+    <linearGradient id="terrace" x2="0" y2="1"><stop stop-color="#f8f1dc"/><stop offset="1" stop-color="#9ba58e"/></linearGradient>
+    <linearGradient id="recess" x2="0" y2="1"><stop stop-color="#475c49"/><stop offset="1" stop-color="#829078"/></linearGradient>
+    <path id="arch" d="M0 76V26a23 23 0 0 1 46 0v50z" fill="url(#recess)" stroke="#aeb59f" stroke-width="5"/>
+  </defs>
+  <g stroke="#7b8874" stroke-width="3" stroke-linejoin="round">
+    <path fill="url(#stone)" d="M103 1086l29-58 54 14 32-23 529 1 57 41 44 13 23 76-6 25H98z"/>
+    <path fill="url(#stone)" d="M116 956Q480 1024 844 956v180Q480 1204 116 1136z"/>
+    <ellipse fill="url(#terrace)" cx="480" cy="956" rx="373" ry="34"/>
+    <path fill="none" stroke="#f0ead6" stroke-width="9" d="M111 968Q480 1036 849 968"/>
+    <use href="#arch" transform="translate(137.2 996.9) scale(0.52 1.00)"/>
+    <use href="#arch" transform="translate(201.6 1007.0) scale(0.59 1.00)"/>
+    <use href="#arch" transform="translate(266.0 1014.9) scale(0.67 1.00)"/>
+    <use href="#arch" transform="translate(330.4 1020.5) scale(0.75 1.00)"/>
+    <use href="#arch" transform="translate(394.9 1023.9) scale(0.82 1.00)"/>
+    <use href="#arch" transform="translate(459.3 1025.0) scale(0.90 1.00)"/>
+    <use href="#arch" transform="translate(527.2 1023.9) scale(0.82 1.00)"/>
+    <use href="#arch" transform="translate(595.2 1020.5) scale(0.75 1.00)"/>
+    <use href="#arch" transform="translate(663.1 1014.9) scale(0.67 1.00)"/>
+    <use href="#arch" transform="translate(731.1 1007.0) scale(0.59 1.00)"/>
+    <use href="#arch" transform="translate(799.0 996.9) scale(0.52 1.00)"/>
+    <path fill="none" stroke="#a2ad94" d="M116 1110Q480 1178 844 1110"/>
+    <path fill="url(#stone)" d="M153 805Q480 873 807 805v179Q480 1052 153 984z"/>
+    <ellipse fill="url(#terrace)" cx="480" cy="805" rx="336" ry="34"/>
+    <path fill="none" stroke="#f0ead6" stroke-width="9" d="M148 817Q480 885 812 817"/>
+    <use href="#arch" transform="translate(173.7 846.5) scale(0.52 1.00)"/>
+    <use href="#arch" transform="translate(237.2 857.3) scale(0.61 1.00)"/>
+    <use href="#arch" transform="translate(300.6 865.5) scale(0.69 1.00)"/>
+    <use href="#arch" transform="translate(364.1 870.9) scale(0.77 1.00)"/>
+    <use href="#arch" transform="translate(427.6 873.7) scale(0.86 1.00)"/>
+    <use href="#arch" transform="translate(493.0 873.7) scale(0.86 1.00)"/>
+    <use href="#arch" transform="translate(560.3 870.9) scale(0.77 1.00)"/>
+    <use href="#arch" transform="translate(627.6 865.5) scale(0.69 1.00)"/>
+    <use href="#arch" transform="translate(695.0 857.3) scale(0.61 1.00)"/>
+    <use href="#arch" transform="translate(762.3 846.5) scale(0.52 1.00)"/>
+    <path fill="none" stroke="#a2ad94" d="M153 958Q480 1026 807 958"/>
+    <path fill="url(#stone)" d="M192 653Q480 721 768 653v179Q480 900 192 832z"/>
+    <ellipse fill="url(#terrace)" cx="480" cy="653" rx="297" ry="34"/>
+    <path fill="none" stroke="#f0ead6" stroke-width="9" d="M187 665Q480 733 773 665"/>
+    <use href="#arch" transform="translate(211.9 695.1) scale(0.53 1.00)"/>
+    <use href="#arch" transform="translate(273.7 706.9) scale(0.62 1.00)"/>
+    <use href="#arch" transform="translate(335.6 715.3) scale(0.71 1.00)"/>
+    <use href="#arch" transform="translate(397.4 720.3) scale(0.81 1.00)"/>
+    <use href="#arch" transform="translate(459.3 722.0) scale(0.90 1.00)"/>
+    <use href="#arch" transform="translate(525.4 720.3) scale(0.81 1.00)"/>
+    <use href="#arch" transform="translate(591.6 715.3) scale(0.71 1.00)"/>
+    <use href="#arch" transform="translate(657.7 706.9) scale(0.62 1.00)"/>
+    <use href="#arch" transform="translate(723.9 695.1) scale(0.53 1.00)"/>
+    <path fill="none" stroke="#a2ad94" d="M192 806Q480 874 768 806"/>
+    <path fill="url(#stone)" d="M233 505Q480 573 727 505v175Q480 748 233 680z"/>
+    <ellipse fill="url(#terrace)" cx="480" cy="505" rx="256" ry="34"/>
+    <path fill="none" stroke="#f0ead6" stroke-width="9" d="M228 517Q480 585 732 517"/>
+    <use href="#arch" transform="translate(251.6 548.0) scale(0.53 1.00)"/>
+    <use href="#arch" transform="translate(311.0 560.7) scale(0.64 1.00)"/>
+    <use href="#arch" transform="translate(370.3 569.2) scale(0.74 1.00)"/>
+    <use href="#arch" transform="translate(429.6 573.5) scale(0.85 1.00)"/>
+    <use href="#arch" transform="translate(491.4 573.5) scale(0.85 1.00)"/>
+    <use href="#arch" transform="translate(555.5 569.2) scale(0.74 1.00)"/>
+    <use href="#arch" transform="translate(619.7 560.7) scale(0.64 1.00)"/>
+    <use href="#arch" transform="translate(683.9 548.0) scale(0.53 1.00)"/>
+    <path fill="none" stroke="#a2ad94" d="M233 654Q480 722 727 654"/>
+    <path fill="url(#stone)" d="M278 361Q480 413 682 361v174Q480 587 278 535z"/>
+    <ellipse fill="url(#terrace)" cx="480" cy="361" rx="211" ry="26"/>
+    <path fill="none" stroke="#f0ead6" stroke-width="9" d="M273 373Q480 425 687 373"/>
+    <use href="#arch" transform="translate(294.4 402.9) scale(0.54 1.00)"/>
+    <use href="#arch" transform="translate(349.4 413.5) scale(0.66 1.00)"/>
+    <use href="#arch" transform="translate(404.3 419.9) scale(0.78 1.00)"/>
+    <use href="#arch" transform="translate(459.3 422.0) scale(0.90 1.00)"/>
+    <use href="#arch" transform="translate(519.8 419.9) scale(0.78 1.00)"/>
+    <use href="#arch" transform="translate(580.2 413.5) scale(0.66 1.00)"/>
+    <use href="#arch" transform="translate(640.7 402.9) scale(0.54 1.00)"/>
+    <path fill="none" stroke="#a2ad94" d="M278 509Q480 561 682 509"/>
+    <path fill="url(#stone)" d="M325 224Q480 276 635 224v170Q480 446 325 394z"/>
+    <ellipse fill="url(#terrace)" cx="480" cy="224" rx="164" ry="26"/>
+    <path fill="none" stroke="#f0ead6" stroke-width="9" d="M320 236Q480 288 640 236"/>
+    <use href="#arch" transform="translate(343.0 268.4) scale(0.56 1.00)"/>
+    <use href="#arch" transform="translate(401.2 280.8) scale(0.73 1.00)"/>
+    <use href="#arch" transform="translate(459.3 285.0) scale(0.90 1.00)"/>
+    <use href="#arch" transform="translate(525.2 280.8) scale(0.73 1.00)"/>
+    <use href="#arch" transform="translate(591.0 268.4) scale(0.56 1.00)"/>
+    <path fill="none" stroke="#a2ad94" d="M325 368Q480 420 635 368"/>
+    <path fill="url(#stone)" d="M371 111Q480 163 589 111v148Q480 311 371 259z"/>
+    <ellipse fill="url(#terrace)" cx="480" cy="111" rx="118" ry="26"/>
+    <path fill="none" stroke="#f0ead6" stroke-width="9" d="M366 123Q480 175 594 123"/>
+    <use href="#arch" transform="translate(393.1 160.4) scale(0.62 0.74)"/>
+    <use href="#arch" transform="translate(459.3 172.0) scale(0.90 0.74)"/>
+    <use href="#arch" transform="translate(538.4 160.4) scale(0.62 0.74)"/>
+    <path fill="none" stroke="#a2ad94" d="M371 233Q480 285 589 233"/>
+    <path fill="url(#stone)" d="M393 98V58h47V26h41v15h39v38h47v31Q480 137 393 98z"/>
+    <path fill="none" stroke="#a5ae96" d="M394 80h46V58h40V42M481 80h40V99M415 100V82M544 110V81"/>
+    <path fill="none" stroke="#6e7e67" stroke-width="24" d="M141 1062c203 44 372 36 651-96M189 874c137 66 299 68 572-73M272 566c111 64 234 62 407-65M366 286c67 41 133 38 231-39"/>
+    <path fill="none" stroke="#d7d7c1" stroke-width="16" d="M141 1059c203 44 372 36 651-96M189 871c137 66 299 68 572-73M272 563c111 64 234 62 407-65M366 283c67 41 133 38 231-39"/>
+  </g>
+</svg>
