@@ -1,0 +1,431 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tame the Snake: Python Package Management with Pyenv, Pipenv &amp; Pipx | jacobsgilles</title>
+    <meta name="description" content="Modern solutions to untangling your Python modules and environments. Pipenv + pyenv + pipx = awesome." />
+    <link rel="canonical" href="https://jacobsgill.es/blog/python-package-management/" />
+    <meta property="og:title" content="Tame the Snake: Python Package Management with Pyenv, Pipenv &amp; Pipx | jacobsgilles" />
+    <meta property="og:description" content="Modern solutions to untangling your Python modules and environments. Pipenv + pyenv + pipx = awesome." />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://jacobsgill.es/blog/python-package-management/" />
+    <meta property="og:image" content="https://jacobsgill.es/personal/images/personal-python-package-management-1200.webp" />
+    <meta property="og:image:alt" content="Ivory-handled precision tools fit separate slots in a serpent-trimmed leather case." />
+    <meta property="og:site_name" content="jacobsgilles" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Tame the Snake: Python Package Management with Pyenv, Pipenv &amp; Pipx | jacobsgilles" />
+    <meta name="twitter:description" content="Modern solutions to untangling your Python modules and environments. Pipenv + pyenv + pipx = awesome." />
+    <meta name="twitter:image" content="https://jacobsgill.es/personal/images/personal-python-package-management-1200.webp" />
+    <meta name="twitter:image:alt" content="Ivory-handled precision tools fit separate slots in a serpent-trimmed leather case." />
+    <link rel="icon" href="/personal/favicon.ico" type="image/x-icon" sizes="any" />
+    <link rel="preload" as="image" type="image/avif" href="/personal/images/personal-python-package-management-1200.avif" imagesrcset="/personal/images/personal-python-package-management-1200-640.avif 640w, /personal/images/personal-python-package-management-1200-960.avif 960w, /personal/images/personal-python-package-management-1200.avif 1200w" imagesizes="(max-width: 720px) calc(100vw - 28px), 84vw" fetchpriority="high" />
+    <link rel="preload" href="/fonts/AlphaLyrae-Medium-subset.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/fonts/DepartureMono-subset.woff2" as="font" type="font/woff2" crossorigin />
+    <style data-site-theme>:root{color-scheme:dark;--ink-on-light:#070607;--glass-lighting:radial-gradient(circle at 18% 12%, rgba(255, 255, 255, 0.14), transparent 34%), linear-gradient(145deg, rgba(255, 255, 255, 0.11), rgba(255, 255, 255, 0.035) 48%, rgba(0, 0, 0, 0.08));--glass-highlight:linear-gradient(138deg, rgba(255, 255, 255, 0.28), transparent 30%), radial-gradient(circle at 74% 17%, rgba(255, 255, 255, 0.2), transparent 28%);--contact-form-material:linear-gradient(145deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.015)), rgba(8, 7, 8, 0.45);--glass-clean-lighting:linear-gradient(145deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.035));--on-image:#ffffff;--on-light-button:#f6f6f2;--on-image-muted:rgba(255, 255, 255, 0.7);--on-image-soft:rgba(255, 255, 255, 0.68);--on-image-body:rgba(255, 255, 255, 0.74);--on-image-label:rgba(255, 255, 255, 0.9);--on-image-secondary:rgba(255, 255, 255, 0.82);--field-material:rgba(255, 255, 255, 0.045);--field-hover-material:rgba(255, 255, 255, 0.075);--glass-top-edge:rgba(255, 255, 255, 0.55);--project-action-highlight:rgba(255, 255, 255, 0.14);--nav-button-surface:#0f0f0f;--about-image-anchor:87%;--about-glass-material:rgba(14, 16, 14, 0.48);--contact-image-fallback:#334741;--hero-mobile-body-ink:rgba(255, 255, 255, 0.78);--portrait-image-filter:brightness(0.85) saturate(0.9);--about-image-filter:brightness(0.8) saturate(0.9);--contact-image-filter:brightness(0.9);--about-image-fallback:#bd7223;--about-image-backdrop:linear-gradient(to bottom, #bd7223, #be7222 50%, #b36419);--page:#101316;--paper-ink:#f0f0eb;--white:#f6f6f2;--accent:#b6d0e5;--panel:#14181c;--panel-2:#191e22;--muted-light:rgba(255, 255, 255, 0.62);--line:rgba(255, 255, 255, 0.16);--glass:rgba(24, 28, 32, 0.34);--project-title-glass:rgba(20, 33, 43, 0.70);--project-reflection-opacity:0.1;--project-title-ink:#ffffff;--project-eyebrow-ink:rgba(255, 255, 255, 0.94);--project-type-shadow:0 1px 2px rgba(0, 0, 0, 0.25);--project-action-glass:rgba(10, 22, 31, 0.62);--project-action-ink:#ffffff;--page-background:var(--page);--page-depth-shade:rgba(0, 0, 0, 0.3);--hero-home-gradient:linear-gradient(135deg, #12191e 0%, #10161b 52%, #0e1419 100%);--hero-home-glow:radial-gradient(95% 80% at 22% 16%, rgba(60, 107, 141, 0.1), transparent 55%);--hero-body-ink:rgba(240, 244, 247, 0.72);--hero-stage-bg:#0e1419;--hero-backdrop:#0e1419;--hero-subtitle-ink:#f6f6f2;--hero-about-tint:#60431f;--hero-projects-tint:#6a2934;--hero-blog-tint:#1e5146;--hero-page-middle-mix:35%;--hero-page-edge-mix:0%;--article-cover-wash:linear-gradient(110deg, color-mix(in srgb, var(--page) 92%, transparent), color-mix(in srgb, var(--page) 78%, transparent));--nav-material:radial-gradient(circle at 18% 10%, rgba(255, 255, 255, 0.14), transparent 34%), linear-gradient(145deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.035) 46%, rgba(0, 0, 0, 0.1)), rgba(12, 14, 20, 0.34);--nav-ink:rgba(255, 255, 255, 0.76);--contact-action-material:rgba(248, 248, 245, 0.7);--trusted-surface:#151b1f;--service-body-ink:var(--muted-light);--ripple-ink:rgba(249, 249, 247, 0.28);--ripple-active-ink:rgba(249, 249, 247, 0.64);}@media(prefers-color-scheme:light){:root{color-scheme:light;--portrait-image-filter:saturate(0.95);--about-image-filter:saturate(0.85);--contact-image-filter:contrast(0.6) brightness(0.8) saturate(1.1);--about-image-fallback:#e88f31;--about-image-backdrop:linear-gradient(to bottom, #e88f31, #e98f31 50%, #db7e26);--page:#fbfaf7;--paper-ink:#161c22;--white:#101010;--accent:#214b76;--panel:#e4e3df;--panel-2:#f3f2ef;--muted-light:rgba(20, 29, 36, 0.76);--line:rgba(41, 56, 67, 0.18);--glass:rgba(255, 255, 255, 0.48);--project-title-glass:rgba(226, 229, 230, 0.68);--project-reflection-opacity:1;--project-title-ink:#1b2933;--project-eyebrow-ink:#1b2933;--project-type-shadow:none;--project-action-glass:rgba(232, 236, 233, 0.42);--project-action-ink:#15232e;--page-background:linear-gradient(145deg, #fbfaf7 0%, #f8f7f3 50%, #f5f4ef 100%);--page-depth-shade:rgba(0, 0, 0, 0.26);--hero-home-gradient:linear-gradient(135deg, #e3e8eb 0%, #dce3e7 48%, #e8e9e6 100%);--hero-home-glow:radial-gradient(95% 80% at 22% 16%, rgba(33, 75, 118, 0.05), transparent 58%);--hero-body-ink:rgba(0, 0, 0, 0.68);--hero-stage-bg:var(--page);--hero-backdrop:#e9ebec;--hero-subtitle-ink:rgba(0, 0, 0, 0.72);--hero-about-tint:#e9be78;--hero-projects-tint:#df9388;--hero-blog-tint:#9bceba;--hero-page-middle-mix:48%;--hero-page-edge-mix:20%;--article-cover-wash:linear-gradient(110deg, color-mix(in srgb, var(--page) 92%, transparent), color-mix(in srgb, var(--page) 72%, transparent));--nav-material:linear-gradient(145deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.02)), rgba(226, 229, 230, 0.76);--nav-ink:#273744;--contact-action-material:rgba(255, 255, 255, 0.65);--trusted-surface:#ecece6;--service-body-ink:var(--muted-light);--ripple-ink:rgba(80, 90, 98, 0.2);--ripple-active-ink:rgba(80, 90, 98, 0.85);}}</style><style data-site-base>@font-face{font-family:Alpha Lyrae;src:url(/fonts/AlphaLyrae-Medium-subset.woff2) format("woff2");font-display:swap;font-style:normal;font-weight:400 700}@font-face{font-family:Departure Mono;src:url(/fonts/DepartureMono-subset.woff2) format("woff2");font-display:swap;font-style:normal;font-weight:400 900}:root{--edge-gap: 25px;--main-tile-gutter: var(--edge-gap);--page-gutter: clamp(16px, 6.5625vw, 252px);--content-width: calc(100vw - (var(--page-gutter) * 2));--tile-width: var(--content-width);--hero-tile-width: var(--tile-width);--major-tile-width: calc(var(--content-width) - (var(--main-tile-gutter) * 2));--tile-content-inline: clamp(62px, 4.6vw, 94px);--viewport-tile-height: calc(100svh - (var(--main-tile-gutter) * 2));--viewport-tile-max-height: 100000px;--viewport-stage-height: min(var(--viewport-tile-height), var(--viewport-tile-max-height));--section-radius: 156px;--main-tile-gap: calc(var(--main-tile-gutter) + var(--main-tile-gutter));--main-tile-radius: var(--section-radius);--noise: url("data:image/svg+xml,%3Csvg viewBox='0 0 160 160' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.78' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)' opacity='.42'/%3E%3C/svg%3E");--fallback-sans: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;--fallback-mono: ui-monospace, "SFMono-Regular", "SF Mono", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;--font-display: "Alpha Lyrae", var(--fallback-sans);--font-body: "Alpha Lyrae", var(--fallback-sans);--font-ui: "Departure Mono", var(--fallback-mono);--font-eyebrow: var(--font-ui);--font-mono: var(--fallback-mono);--tracking-ui: .04em;--fs-h1: clamp(3.9rem, 6.65vw, 7.8rem);--fs-h1-mobile: clamp(3rem, 16.8vw, 4.1rem);--fs-eyebrow: clamp(1rem, .86rem + .4vw, 1.5rem);--fs-hero-accent: var(--fs-eyebrow);--fs-hero-body: var(--fs-eyebrow);--interaction-transition: .22s ease}@media(min-width:900px){:root{--viewport-tile-max-height: calc(var(--hero-tile-width) * .78)}}@media(max-width:1240px){:root{--tile-content-inline: clamp(36px, 4.6vw, 56px)}}*{box-sizing:border-box}html{background:var(--page)}body{margin:0;min-width:320px;min-height:100vh;background:var(--page-background, var(--page));color:var(--paper-ink);font-family:var(--font-body);font-feature-settings:"calt" 0,"liga" 0,"ss01" 0;line-height:1.5;text-rendering:geometricPrecision}#page-content{position:relative;isolation:isolate}#page-content:before{position:absolute;inset:0;z-index:-1;pointer-events:none;content:"";background:linear-gradient(to bottom,transparent var(--page-depth-start, calc(var(--viewport-stage-height) + var(--main-tile-gutter) * 2)),var(--page-depth-shade) var(--page-depth-end, 85%))}h1,p{margin-top:0}h1{margin-bottom:0;color:var(--ink-on-light);font-family:var(--font-display);font-feature-settings:"calt" 0,"liga" 0;font-size:var(--fs-h1);font-weight:500;letter-spacing:0;line-height:.9;white-space:nowrap}.alpha-mixed{white-space:inherit}.alpha-pixel{display:inline;color:inherit;font-family:var(--font-display);font-feature-settings:"calt" 0,"ss01" 1,"liga" 0;vertical-align:baseline}.brand-wordmark{color:currentColor;font-family:var(--font-display);font-feature-settings:"calt" 0,"liga" 0;letter-spacing:0}.brand-wordmark-accent,.brand-wordmark-ex{color:var(--accent)}.brand-wordmark-ai{color:currentColor;text-shadow:none}.hero{background:transparent}.viewport-tile{display:flow-root;width:var(--hero-tile-width, var(--content-width));height:calc(var(--viewport-stage-height) + (var(--main-tile-gutter) * 2));min-height:0;max-height:none;margin:0 auto;padding:var(--main-tile-gutter);overflow:hidden;overflow:clip;contain:layout paint}.viewport-tile__stage{position:relative;height:var(--viewport-stage-height);border-radius:var(--main-tile-radius);overflow:hidden;overflow:clip;isolation:isolate}.major-tile{width:var(--major-tile-width);margin-inline:auto}.hero-stage{position:relative;container:hero-stage / inline-size;display:flex;flex-direction:column;height:auto;min-height:var(--viewport-stage-height);border-radius:var(--main-tile-radius);overflow:hidden;background:var(--hero-glow),var(--hero-gradient-bg);isolation:isolate;--hero-stacked: 1;--hero-subject-scale: 1;--hero-subject-shift-x: 0px;--hero-gradient-bg: var(--hero-home-gradient);--hero-glow: var(--hero-home-glow);--hero-lede-color: var(--hero-body-ink)}.hero-bg{position:relative;flex:none;order:1;inset:0;z-index:auto;height:min(560px,55svh,calc((100cqw - 2 * var(--tile-content-inline)) * var(--hero-image-ratio, 1) / (2 * max(var(--hero-optical-anchor, .5),1 - var(--hero-optical-anchor, .5)))));margin-top:auto;background:transparent;pointer-events:none}.hero-gradient,.hero-subject{position:absolute}.hero-subject-frame{display:contents}.hero-gradient{display:none;inset:0;width:100%;height:100%;z-index:0;background:var(--hero-glow),var(--hero-gradient-bg)}.hero-gradient:after{position:absolute;inset:0;content:"";background:var(--noise);background-size:140px 140px;mix-blend-mode:soft-light;opacity:.22}.hero-subject{--hero-image-height: 77.45cqh;z-index:2;left:50%;translate:calc(var(--hero-subject-shift-x) + (.5 - var(--hero-optical-anchor, .5)) * 100% * var(--hero-subject-scale)) 0;top:auto;bottom:0;width:auto;height:100%;aspect-ratio:1 / var(--hero-image-ratio, 1);max-width:none;object-fit:contain;object-position:center bottom;transform:translate(-50%) scale(var(--hero-subject-scale));transform-origin:center bottom}.hero-copy{position:relative;z-index:3;display:grid;flex:none;order:0;height:auto;grid-template-columns:1fr;gap:24px;align-content:center;align-items:center;padding:36px var(--tile-content-inline) 24px;pointer-events:none}.hero-title-stack{display:grid;gap:12px;margin:0}.hero h1:has(.brand-wordmark--descenders){padding-block-end:.12em}.hero-subtitle{white-space:nowrap;margin:0;color:var(--hero-subtitle-ink);font-family:var(--font-eyebrow);font-feature-settings:"calt" 0,"ss01" 1,"liga" 0;font-size:min(var(--fs-hero-accent),max(12px,calc((100cqw - 2 * var(--tile-content-inline)) / var(--hero-subtitle-em, 20))));font-weight:800;letter-spacing:var(--tracking-ui);text-transform:uppercase}.hero-subtitle-dot{display:inline-block;transform:translateY(-.06em)}.lede{max-width:390px;margin:0;color:var(--hero-lede-color);font-family:var(--font-body);font-feature-settings:"calt" 0,"liga" 0,"ss01" 0;font-size:var(--fs-hero-body);font-weight:600;line-height:1.52}.hero-flow{display:none;position:absolute;inset:0;z-index:4;opacity:0;pointer-events:none}@media(min-width:1025px){.hero-stage:where(:not([data-hero-mode=stacked])).is-hero-flow-ready .hero-copy{opacity:0}.hero-stage:where(:not([data-hero-mode=stacked])).is-hero-flow-ready .hero-flow{opacity:1}}.is-hero-flow-settling .hero-flow-line,.is-hero-flow-settling .hero-ascii-ripple{visibility:hidden}.hero-flow-word{position:absolute;top:0;visibility:visible;white-space:pre}.hero-flow-title,.hero-flow-line{position:absolute;z-index:1;pointer-events:none}.hero-flow-title{transform-origin:top left;display:grid;gap:12px;width:max-content}.hero-flow-title h1{margin:0}.hero-flow-title .hero-subtitle{position:relative}.hero-flow-line{display:block;max-width:100%;color:var(--hero-lede-color);white-space:pre}@media(prefers-color-scheme:dark){.hero-gradient:after{mix-blend-mode:soft-light;opacity:.18}.hero h1{color:var(--on-light-button)}}@media(max-width:1024px){:root{--page-gutter: clamp(14px, 4vw, 42px);--content-width: calc(100vw - (var(--page-gutter) * 2));--section-radius: 96px}}@media(max-width:720px){:root{--edge-gap: 14px;--page-gutter: 0px;--content-width: 100vw;--tile-content-inline: 28px;--section-radius: 42px;--fs-h1: var(--fs-h1-mobile)}.hero{min-height:620px}.hero-gradient:after{opacity:0}@media(prefers-color-scheme:dark){.hero-stage{--hero-lede-color: var(--hero-mobile-body-ink)}.hero h1{color:var(--on-image)}.hero-subtitle{color:var(--on-image-secondary)}}}.hero h1{font-size:min(var(--fs-h1),max(32px,calc((100cqw - 2 * var(--tile-content-inline)) / var(--hero-title-em, 5.2))))}.hero{height:auto}@media(min-width:1025px){.hero:not(:has([data-hero-mode=stacked])){height:calc(var(--viewport-stage-height) + var(--main-tile-gutter) * 2)}.hero-stage:where(:not([data-hero-mode=stacked])){--hero-stacked: 0;container-type:size;display:block;height:100%;min-height:0;background:var(--hero-stage-bg);.hero-copy{height:100%;grid-template-columns:minmax(0,1fr) 360px;gap:48px;padding-block:clamp(58px,5vw,72px) 116px}.hero-title-stack{transform:translateY(62px)}.lede{max-width:clamp(390px,calc(390px + (100cqw - 1440px) * 250 / 480),640px);margin-top:142px}.hero-bg{position:absolute;height:auto;background:var(--hero-backdrop)}.hero-subject{width:calc(var(--hero-image-height) / var(--hero-image-ratio, 1));height:var(--hero-image-height)}.hero-gradient,.hero-flow{display:block}@container hero-stage (min-aspect-ratio: 191 / 100){.hero-subject{top:calc(50cqh - 14.36cqw);bottom:auto;width:33.25cqw;height:auto;transform-origin:center top}}}}.collection-page main{padding-top:0}.page-hero .hero-stage{--hero-gradient-bg: radial-gradient(ellipse at 50% 38%, var(--page-hero-tint) 0%, color-mix(in srgb, var(--page-hero-tint) var(--hero-page-middle-mix), var(--page)) 72%, color-mix(in srgb, var(--page-hero-tint) var(--hero-page-edge-mix), var(--page)) 100%);--hero-glow: radial-gradient(95% 80% at 22% 16%, color-mix(in srgb, var(--page-hero-tint) 18%, transparent), transparent 58%)}.page-hero--about .hero-stage{--page-hero-tint: var(--hero-about-tint)}.page-hero--projects .hero-stage{--page-hero-tint: var(--hero-projects-tint)}.page-hero--blog .hero-stage{--page-hero-tint: var(--hero-blog-tint)}</style>
+    <script type="application/ld+json">[{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://jacobsgill.es/"},{"@type":"ListItem","position":2,"name":"blog","item":"https://jacobsgill.es/blog/"},{"@type":"ListItem","position":3,"name":"Tame the Snake: Python Package Management with Pyenv, Pipenv & Pipx","item":"https://jacobsgill.es/blog/python-package-management/"}]},{"@context":"https://schema.org","@type":"BlogPosting","headline":"Tame the Snake: Python Package Management with Pyenv, Pipenv & Pipx","description":"Modern solutions to untangling your Python modules and environments. Pipenv + pyenv + pipx = awesome.","image":"https://jacobsgill.es/personal/images/personal-python-package-management-1200.webp","url":"https://jacobsgill.es/blog/python-package-management/","mainEntityOfPage":"https://jacobsgill.es/blog/python-package-management/","author":{"@type":"Person","name":"Gilles Jacobs","url":"https://jacobsgill.es/about/"},"publisher":{"@type":"Person","name":"Gilles Jacobs","url":"https://jacobsgill.es/about/"},"datePublished":"2019-08-29","keywords":"Archive","inLanguage":"en"}]</script>
+    <script type="module" fetchpriority="low" crossorigin src="/assets/main-DmWVzh5X.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/main-jzBf9Kpi.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#top">Skip to content</a>
+    <div id="app">
+  <header class="site-header" aria-label="Primary">
+    <div class="nav-shell">
+      <a class="nav-special brand-mark" href="/" aria-label="Home">
+        <span class="brand-portrait"><img src="/images/exverbai-brand-mark-480.webp" alt="" loading="eager" decoding="async" width="480" height="340" /></span>
+        <span class="brand-label" aria-hidden="true"><span><span class="nav-link-label">Home</span></span></span>
+      </a>
+      <nav aria-label="Main navigation">
+        <a href="/about/"><span class="nav-link-label">About</span></a>
+        <a href="/projects/"><span class="nav-link-label">Projects</span></a>
+        <a href="/blog/" class="is-nav-active" aria-current="page"><span class="nav-link-label">Blog</span></a>
+      </nav>
+      <a class="nav-special nav-contact contact-action-glass" href="#contact" aria-label="Contact">
+        <span class="nav-contact-content">
+          <span class="nav-contact-label nav-link-label">Contact</span>
+          <span class="contact-chevron-symbol" aria-hidden="true"></span>
+        </span>
+      </a>
+    </div>
+  </header>
+      <div id="page-content" class="content-page" data-page-kind="blog">
+        <main id="top" tabindex="-1">
+    <article class="editorial-article">
+      <div class="article-breadcrumbs major-tile"><nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><a href="/blog/">Blog</a><span aria-hidden="true">/</span><span aria-current="page">Tame the Snake: Python Package Management with Pyenv, Pipenv &amp; Pipx</span></nav></div>
+      <header class="article-cover major-tile main-tile-surface">
+        <picture class="content-picture"><source type="image/avif" srcset="/personal/images/personal-python-package-management-1200-640.avif 640w, /personal/images/personal-python-package-management-1200-960.avif 960w, /personal/images/personal-python-package-management-1200.avif 1200w" sizes="(max-width: 720px) calc(100vw - 28px), 84vw" /><img src="/personal/images/personal-python-package-management-1200.webp" srcset="/personal/images/personal-python-package-management-1200-640.webp 640w, /personal/images/personal-python-package-management-1200-960.webp 960w, /personal/images/personal-python-package-management-1200.webp 1200w" sizes="(max-width: 720px) calc(100vw - 28px), 84vw" alt="Ivory-handled precision tools fit separate slots in a serpent-trimmed leather case." width="1200" height="800" loading="eager" decoding="async" fetchpriority="high" /></picture>
+        <div class="article-cover-title">
+          <div class="article-meta"><span>Archive</span><time datetime="2019-08-29">29 August 2019</time><span>10 min read</span></div>
+          <h1 id="page-title" tabindex="-1"><span class="alpha-mixed">T<span class="alpha-pixel">a</span>me the Sn<span class="alpha-pixel">a</span>ke: Pyth<span class="alpha-pixel">o</span>n P<span class="alpha-pixel">a</span>ck<span class="alpha-pixel">a</span>ge M<span class="alpha-pixel">a</span>n<span class="alpha-pixel">a</span>gement with Py<span class="alpha-pixel">e</span>nv, Pip<span class="alpha-pixel">e</span>nv &amp; P<span class="alpha-pixel">i</span>px</span></h1>
+          <p class="page-description">Modern solutions to untangling your Python modules and environments. Pipenv + pyenv + pipx = awesome.</p>
+        </div>
+      </header>
+      <div class="article-reading article-body">
+        <p class="archive-note">From the archive: originally published 2019-08-29. Roles, openings, and technical advice reflect that time.</p><div class="archive-body"><p>In this post I describe the tools and workflow needed for a clean and simple Python development environment.
+Messy dependencies, mixed module versions and unknown requirements are a thing of the past.
+Learn to keep your development clean and free of conflicting and ambiguous versions.</p>
+<figure class="article-illustration article-illustration--left main-tile-surface"><picture class="content-picture"><source type="image/avif" srcset="/personal/images/personal-python-package-management-detail-1-1200-640.avif 640w, /personal/images/personal-python-package-management-detail-1-1200-960.avif 960w, /personal/images/personal-python-package-management-detail-1-1200.avif 1200w" sizes="(max-width: 639px) min(300px, calc(100vw - 56px)), 220px" /><img src="/personal/images/personal-python-package-management-detail-1-1200.webp" srcset="/personal/images/personal-python-package-management-detail-1-1200-640.webp 640w, /personal/images/personal-python-package-management-detail-1-1200-960.webp 960w, /personal/images/personal-python-package-management-detail-1-1200.webp 1200w" sizes="(max-width: 639px) min(300px, calc(100vw - 56px)), 220px" alt="Three separate ivory and glass cases house distinct brass mechanisms." width="1200" height="800" loading="lazy" decoding="async" fetchpriority="low" /></picture></figure><h2 id="the-problem">The Problem</h2>
+<p>Python is loved by many for its ecosystem. You can find a library or module package for nearly anything in <a href="https://pypi.org/" rel="noopener noreferrer">the Pypi repositories</a>.
+Managing these libraries, packages and modules has historically been quite messy.</p>
+<figure><img src="/personal/legacy/img/python-environment.png" alt="Famous XKCD comic lamenting the state of his Python environement." loading="lazy" decoding="async" width="492" height="487" />
+<figcaption>This is the situation we want to avoid. Source: https://xkcd.com/1987/</figcaption></figure>
+<p>Different projects require different module and even different Python versions.
+For a long while writing code in Python required hacked together tools to make pip behave cleanly when working on multiple projects.
+Things tend to get even more messy when on a multi-user system such as on RnD servers.
+Virtual environment management was not user-friendly
+Here I share my best practices for handling multiple projects with their own environments in Python.</p>
+<p>The approach should provide the following:</p>
+<ul>
+<li><strong>Ease-of-use</strong>: Simple creation of virtual environments that is cross-platform, without hacky installations for tools or barely documented scripts, and installs modules straight from Pypi pip or Github repos. Easy management of packages and dependencies.</li>
+<li>Install and use <strong>different Python versions</strong>: Many developers -myself included- work on Python 2 legacy code, but also use the latest-and-greatest in new projects. To keep the system clean, this requires a manager for Python interpreter versions</li>
+<li>Distinguish <strong>project environments vs. global tools</strong>: Separate project-based virtual environments from Python command-line tools.</li>
+<li><strong>Document project requirements</strong> unambiguously: Use a clear and non-ambiguous dependency graph to avoid version conflicts. This is especially handy in setting up existing projects.</li>
+</ul>
+<p>While a lot of ink has flowed on Python development tools, <a href="https://amaral.northwestern.edu/resources/guides/pyenv-tutorial" rel="noopener noreferrer">many</a> <a href="https://www.freecodecamp.org/news/manage-multiple-python-versions-and-virtual-environments-venv-pyenv-pyvenv-a29fb00c296f/" rel="noopener noreferrer">blog</a> <a href="https://opensource.com/article/19/4/managing-python-packages" rel="noopener noreferrer">posts</a> contain out-dated information:
+<a href="https://github.com/pyenv/pyenv-virtualenvwrapper" rel="noopener noreferrer">Pyenv-virtualenvwrapper</a> is often recommended.
+But it has been overtaken by <code>Pipenv</code>, which offers a cleaner installation and more user-friendly and powerful solution to environment and module management.
+Many older post also do not tackle globally installed Python command-line tools which cause confusion with multiple concurrent Python versions.</p>
+<h2 id="the-solution">The Solution</h2>
+<p>Sadly, there is not one tool that integrates our desired requirements to a satisfactory level.
+In vain of <a href="https://en.wikipedia.org/wiki/Unix_philosophy" rel="noopener noreferrer">the Unix philosophy</a> -"Do One Thing and Do It Well"- we pick one tool to handle each aspect of our ideal workflow.</p>
+<p><code>Pyenv</code>, <code>Pipenv</code>, and <code>Pipx</code> meet and excede our requirements and are both mature and actively supported by the community.</p>
+<ul>
+<li><a href="https://github.com/pyenv/pyenv" rel="noopener noreferrer"><strong><code>Pyenv</code></strong></a>: Install different Python versions globally and locally.</li>
+<li><a href="https://pipenv.kennethreitz.org" rel="noopener noreferrer"><strong><code>Pipenv</code></strong></a>: Install module packages and creates environments for your projects. Recommended packaging tool by the official Python Packaging Authority</li>
+<li><a href="https://github.com/pipxproject/pipx" rel="noopener noreferrer"><strong><code>Pipx</code></strong></a>: Install and run Python applications such as command-line tools.</li>
+</ul>
+<p>Don't feel bad if you are a long-time Python dev and have not heard of these.
+<code>Pipx</code> and <code>Pipenv</code> are fairly recent additions (2018 and 2019 resp.) to the Python development toolset.</p>
+<p>We will now go over each tool, provide installation and common-usage instructions.
+Then I give an example of a typical workflow for new projects.</p>
+<h2 id="pyenv">Pyenv</h2>
+<p><a href="https://github.com/pyenv/pyenv" rel="noopener noreferrer"><code>Pyenv</code></a> is the go-to tool for managing Python versions.
+It allows for:</p>
+<ul>
+<li>Setting directory-level local Python versions for projects</li>
+<li>Setting a system-wide Python version on a per-user basis.</li>
+</ul>
+<p>It supports the default CPython interpreter as well as pypy, anaconda, jython, micropython, etc.</p>
+<p><code>Pyenv</code> excells at handling different Python versions, but don't be fooled by its name:
+It is not a virtual environment manager. We have <code>Pipenv</code> for that.</p>
+<p><strong>Installation:</strong></p>
+<p><code>Pyenv</code> installation is fairly easy and well-documented.</p>
+<ul>
+<li>
+<p><strong>Linux</strong>: to install pyenv use <a href="https://github.com/pyenv/pyenv-installer" rel="noopener noreferrer">the automated installer</a> or follow <a href="https://github.com/pyenv/pyenv#basic-github-checkout" rel="noopener noreferrer">the manual installation instructions on Github</a>.</p>
+<pre tabindex="0"><code class="language-bash">$ curl -L https://github.com/pyenv/pyenv-installer/raw/master/bin/pyenv-installer | bash
+</code></pre>
+<p>The installer will output some configuration code at the end that needs to be added to your shell’s rc file:</p>
+<pre tabindex="0"><code class="language-bash">$ #ensure the following is in your ~/.&lt;SHELL&gt;rc (.bashrc, .zshrc, .kshrc)export PATH="$HOME/.pyenv/bin:$PATH"
+$ eval "$(pyenv init -)"
+$ eval "$(pyenv virtualenv-init -)"
+$ export PYENV_ROOT="$HOME/.pyenv" # needed by pipenv
+</code></pre>
+<p>Finally, refresh your shell:</p>
+<pre tabindex="0"><code class="language-bash">$ source ~/.&lt;SHELL&gt;rc
+</code></pre>
+</li>
+<li>
+<p><strong>Windows</strong>: Use <a href="https://github.com/pyenv-win/pyenv-win" rel="noopener noreferrer">the Pyenv-win fork</a> and follow <a href="https://github.com/pyenv-win/pyenv-win#installation" rel="noopener noreferrer">the installation instructions</a></p>
+</li>
+<li>
+<p><strong>macOS</strong>: <a href="https://github.com/pyenv/pyenv#homebrew-on-macos" rel="noopener noreferrer">install via Homebrew</a></p>
+<pre tabindex="0"><code class="language-bash">$ brew update
+$ brew install pyenv
+</code></pre>
+</li>
+</ul>
+<p><strong>Post-installation actions</strong></p>
+<p>Once <code>Pyenv</code> is installed can check which Python interpreters are already on the system:</p>
+<pre tabindex="0"><code class="language-bash">$ pyenv versions
+system
+</code></pre>
+<p>If your output only says <code>system</code>, only the default pre-installed Python version of your OS is installed.</p>
+<p>Now check out all Python interpreter versions that are at your fingertips:</p>
+<pre tabindex="0"><code class="language-bash">$ pyenv install --list
+Available versions:
+  2.1.3
+  2.2.3
+...
+  stackless-3.4.7
+  stackless-3.5.4
+</code></pre>
+<p>To use any of these version of Python, you must first build and install them.
+I suggest you install the latest version (at time of writing this is 3.8.0):</p>
+<pre tabindex="0"><code class="language-bash">$ pyenv install 3.8.0
+</code></pre>
+<p>Now install a global version of Python that is going to be used system-wide.</p>
+<pre tabindex="0"><code class="language-bash">$ pyenv global 3.8.0
+</code></pre>
+<p>Your operating system probably comes with a preinstalled version of Python which you can now never use again or even remove.</p>
+<p><em>Note: If a new Python version is released and you do not see it in <code>pyenv install --list</code>, you need to update pyenv with <code>pyenv update</code>.</em></p>
+<h2 id="pipx">Pipx</h2>
+<figure><img src="/personal/legacy/img/pipx-logo.jpg" alt="Pipx logo." loading="lazy" decoding="async" width="201" height="192" />
+</figure>
+<p>[Pipx](<a href="https://github.com/pipxproject/pipx" rel="noopener noreferrer"><strong><code>Pipx</code></strong></a> solves the issue of installing and running Python applications.
+Python applications are pieces of end-user software written in Python.
+They are often fully-fledged command-line tools such as <a href="https://black.readthedocs.io" rel="noopener noreferrer"><code>black</code></a>, <a href="https://cookiecutter.readthedocs.io" rel="noopener noreferrer"><code>cookiecutter</code></a>, <a href="https://scrapy.org/doc/" rel="noopener noreferrer"><code>scrapy</code></a>, <a href="https://nicolargo.github.io/glances/" rel="noopener noreferrer"><code>glances</code></a>, or the ever popular <a href="https://ytdl-org.github.io/youtube-dl/index.html" rel="noopener noreferrer"><code>youtube-dl</code></a>.</p>
+<p>These are often Python modules that you want to be available to the user globally.
+They are not dependencies in a project, so using <code>Pipenv</code> to manage them is ill-advised.
+You want to update these packages from time-to-time as their security and functionality improves.</p>
+<p><code>Pipx</code> is a tool to help you install and run end-user applications written in Python.
+<code>Pipx</code> is not a tool for development or publishing of your code -- it's only for consuming already published packages.</p>
+<p>Like <code>Pipenv</code> it has two main components:</p>
+<ol>
+<li><strong>An installation mode</strong>: Cleanly install, list, upgrade, and uninstall packages globally and in an isolated environment with the <code>pipx install PACKAGE</code> command.</li>
+<li><strong>A runtime mode</strong>: Run the latest version of a Python application in a temporary environment with the <code>pipx run</code> command.</li>
+</ol>
+<p><strong>Installation</strong>
+This is the last time you will be using <code>pip</code> directly.
+<code>Pip</code> is dead, long live <code>Pip</code>!</p>
+<pre tabindex="0"><code class="language-bash">$ pip install --user pipx
+$ pipx ensurepath
+</code></pre>
+<p><strong>Usage</strong>
+You can install a package globally by running</p>
+<pre tabindex="0"><code class="language-bash">$ pipx install PACKAGE
+</code></pre>
+<p>For example:</p>
+<pre tabindex="0"><code class="language-bash">$ pipx install pycowsay
+installed package pycowsay 2.0.3, Python 3.7.3
+These apps are now globally available
+  - pycowsay
+done! ✨ 🌟 ✨
+</code></pre>
+<p>Now we can run this application like any other:</p>
+<pre tabindex="0"><code class="language-bash">$ pycowsay "pipx is awesome"
+  ____
+&lt; pipx is awesome &gt;
+  ====
+         \
+          \
+            ^__^
+            (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+</code></pre>
+<p>To uninstall simply run <code>pipx uninstall pycowsay</code>.</p>
+<p>To temporarily install and run an app in its own sandboxed environment:</p>
+<pre tabindex="0"><code class="language-bash">$ pipx run pycowsay "pipx is awesome"
+</code></pre>
+<p>This will download and install and run a package, execute your command and arguments, and automatically remove it afterwards.
+<code>pipx run PACKAGE</code> is usefull for apps you don't use frequently and want to use the latest version.
+A typical example of such an app is <code>cookiecutter</code> which is typically run once to set-up projects.</p>
+<p>Updating installed packages to the latest version works like other package managers:
+Simply run <code>pipx upgrade-all</code> to upgrade all installed apps.</p>
+<h2 id="pipenv">Pipenv</h2>
+<figure class="article-illustration main-tile-surface"><picture class="content-picture"><source type="image/avif" srcset="/personal/images/personal-python-package-management-detail-2-1200-640.avif 640w, /personal/images/personal-python-package-management-detail-2-1200-960.avif 960w, /personal/images/personal-python-package-management-detail-2-1200.avif 1200w" sizes="(max-width: 639px) min(300px, calc(100vw - 56px)), 220px" /><img src="/personal/images/personal-python-package-management-detail-2-1200.webp" srcset="/personal/images/personal-python-package-management-detail-2-1200-640.webp 640w, /personal/images/personal-python-package-management-detail-2-1200-960.webp 960w, /personal/images/personal-python-package-management-detail-2-1200.webp 1200w" sizes="(max-width: 639px) min(300px, calc(100vw - 56px)), 220px" alt="A bronze serpent measuring tape beside a fitted ivory gauge." width="1200" height="800" loading="lazy" decoding="async" fetchpriority="low" /></picture></figure><figure><img src="/personal/legacy/img/pipenv-logo.jpg" alt="Pipenv logo." loading="lazy" decoding="async" width="292" height="100" />
+</figure>
+<p><a href="https://pipenv.kennethreitz.org" rel="noopener noreferrer"><code>Pipenv</code></a> fetches and installs Python packages much like <code>pip</code>.
+<code>Pipenv</code> also handles the creation of virtual environments.
+In this sense, it puts together <code>pip</code> and <code>virtualenv</code> functionality in one user-friendly manager.</p>
+<p>It specifies a project-specific <code>Pipfile</code> that contains the exact module versions and Python requirements.
+This file is similar but superior to your old <code>requirements.txt</code> file because it contains more information and auto-generates a <code>Pipfile.lock</code> to avoid potential conflicts and ambiguities.
+The <code>Pipfile.lock</code> does two things:</p>
+<ol>
+<li>Provides good security by keeping a hash of each package installed.</li>
+<li>Pins the versions of all dependencies and sub-dependencies, giving you replicable environments.</li>
+</ol>
+<p>This avoids nasty situations like when you share a project with your colleague and their version of a library doesn't match so the code does not run.
+Simply call <code>pipenv install</code> in a project folder containing a Pipfile and your dependencies and virtual environment are ready to go.</p>
+<p><code>Pipenv</code> consists of two main components:</p>
+<ol>
+<li><strong>An installation mode</strong> <code>pipenv install</code> for installing packages.</li>
+<li><strong>A runtime mode</strong> <code>pipenv shell</code> and <code>pipenv run</code> for activating virtual environments and integrating the dependencies, and running a command in the environment.</li>
+</ol>
+<p><strong>Installation:</strong>
+There are several options for OS-specific installation described in <a href="https://pipenv-fork.readthedocs.io/en/latest/install.html#installing-pipenv" rel="noopener noreferrer">the Pipenv documentation</a>.
+We choose for the "pragmatic" installation using our <code>Pipx</code> as <code>Pipenv</code> is meant to be installed globally:</p>
+<pre tabindex="0"><code class="language-bash">$ pipx install pipenv
+</code></pre>
+<h2 id="new-project-workflow">New Project Workflow</h2>
+<p>Let's demonstrate how <code>Pyenv</code> and <code>Pipenv</code> work together to start a new Python project.</p>
+<p>Make a directory in which your source code will be written:</p>
+<pre tabindex="0"><code class="language-bash">$ mkdir test-project
+$ cd test-project
+</code></pre>
+<p>Next, use <code>Pyenv</code> to set the local Python version:</p>
+<pre tabindex="0"><code class="language-bash">$ pyenv local 3.8.0
+</code></pre>
+<p>This will associate that directory with Python 3.8.0 so that calling Python from within the "test-project" folder will always refer to that version of Python.
+<strong>Note that you first need to install the desired version: <code>pyenv install 3.8.0</code></strong></p>
+<p>Then we use <code>Pipenv</code> to simultanously install a package and create a virtual environment:</p>
+<pre tabindex="0"><code class="language-bash">$ pipenv install numpy
+Creating a virtualenv for this project…
+Pipfile: /home/gilles/test-project/Pipfile
+Using /home/gilles/.pyenv/versions/3.8.0/bin/python3.8 (3.8.0) to create virtualenv…
+⠧ Creating virtual environment...Already using interpreter /home/gilles/.pyenv/versions/3.8.0/bin/python3.8
+Using base prefix '/home/gilles/.pyenv/versions/3.8.0'
+New python executable in /home/gilles/.local/share/virtualenvs/test-project-J2TrTMEi/bin/python3.8
+Also creating executable in /home/gilles/.local/share/virtualenvs/test-project-J2TrTMEi/bin/python
+Installing setuptools, pip, wheel...
+done.
+
+✔ Successfully created virtual environment! 
+Virtualenv location: /home/gilles/.local/share/virtualenvs/test-project-J2TrTMEi
+Creating a Pipfile for this project…
+Installing numpy…
+Adding numpy to Pipfile's [packages]…
+✔ Installation Succeeded 
+Pipfile.lock not found, creating…
+Locking [dev-packages] dependencies…
+Locking [packages] dependencies…
+✔ Success! 
+Updated Pipfile.lock (456e4b)!
+Installing dependencies from Pipfile.lock (456e4b)…
+  🐍   ▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉ 1/1 — 00:00:00
+To activate this project's virtualenv, run pipenv shell.
+Alternatively, run a command inside the virtualenv with pipenv run.
+</code></pre>
+<p>Let's check out our Pipfile to see the exact specification of our dependencies:</p>
+<pre tabindex="0"><code class="language-bash">$ cat Pipfile
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+
+[packages]
+numpy = "*"
+
+[requires]
+python_version = "3.8"
+</code></pre>
+<p>As you can see, it specifies the source of our packages, the module version number ("*" meaning any version, by default this will install the latest version), and the exact Python version.</p>
+<p>To run write and test code you need to activate to virtual environment:</p>
+<pre tabindex="0"><code class="language-bash">$ pipenv shell
+Launching subshell in virtual environment…
+</code></pre>
+<p>These three steps are all there is to it!
+You now have an easy to manage Python development folder which can be replicated without error.</p>
+<p>If you need to know the path to the Python interpreter binary because you want to set it in <a href="https://www.jetbrains.com/pycharm/" rel="noopener noreferrer">your IDE of choice</a> you can simply run <code>which python</code> from within the virtual environment subshell.</p>
+<h2 id="existing-project-workflow">Existing Project Workflow</h2>
+<p>This is for working on an existing codebase.
+The codebase can be a project you pulled off Github or a folder shared with colleagues.
+If the original writer uses <code>Pip</code>, this means it already contains a <code>requirements.txt</code> file.
+Even better yet, they are already on the Pipenv boat and it contains a <code>Pipfile.lock</code>.</p>
+<p>When a <code>requirements.txt</code> file is present:</p>
+<pre tabindex="0"><code class="language-bash">$ pipenv install -r /path/to/requirements.txt
+</code></pre>
+<p>This will install all dependencies and create a Pipfile from <code>requirements.txt</code>.</p>
+<p>If the project contains a <code>Pipfile.lock</code>, installing and creating a virtual env is as simple as:</p>
+<pre tabindex="0"><code class="language-bash">$ pipenv install
+Installing dependencies from Pipfile.lock (456e4b)…
+  🐍   ▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉ 1/1 — 00:00:00
+</code></pre>
+<p>Et voila! You're ready to start working.</p>
+<p><strong>Clean-up</strong></p>
+<p>The remove the virtual environment and the <code>test-project</code> folder:</p>
+<pre tabindex="0"><code class="language-bash">$ cd test-project
+$ pipenv --rm
+Removing virtualenv (/home/gilles/.local/share/virtualenvs/test-project-J2TrTMEi)…
+$ cd .. &amp;&amp; rm -r test-project
+</code></pre>
+<h2 id="alternatives">Alternatives</h2>
+<ul>
+<li><a href="https://poetry.eustace.io/" rel="noopener noreferrer">Poetry</a>: Poetry is a snappier packaging and dependency manager to replace Pipenv. Unlike Pipenv, Poetry does not include Python interpreter versioning, is less widely used, and is not officially supported by <a href="https://www.pypa.io" rel="noopener noreferrer">the Python Packaging Authority</a>. Poetry however is <a href="https://johnfraney.ca/posts/2019/03/06/pipenv-poetry-benchmarks-ergonomics/" rel="noopener noreferrer">significantly faster</a> when locking in dependencies and this translates to less waiting around when writing code. I will keep an eye on this promising project and follow up with an update after using it for a while.</li>
+<li><a href="https://docs.conda.io" rel="noopener noreferrer">Conda</a>: I personally have very bad experiences using Conda to install data-science and deep learning frameworks. Many conda packages are broken and unmaintained. While pip is integrated into Conda, pipenv is the more flexible alternative. Conda is bloated compared to other tools, suffers from feature creep, and places itself outside of the Python ecosystem.</li>
+<li><a href="https://github.com/takluyver/flit" rel="noopener noreferrer">Flit</a> and <a href="https://github.com/ofek/hatch" rel="noopener noreferrer">Hatch</a>: very recent additions to the ecosystem which are still in their infancy. Will keep on eye on.</li>
+</ul>
+</div>
+        
+        
+        <p class="article-tags">Topics: python · environment · package · module · management · tools · developper</p>
+        <p class="article-signoff">Written by <a href="/about/">Gilles Jacobs</a>.</p>
+      </div>
+    </article>
+    <section class="related-section major-tile" aria-labelledby="related-title"><div class="related-heading"><h2 id="related-title"><span class="alpha-mixed">k<span class="alpha-pixel">e</span>ep r<span class="alpha-pixel">e</span>ading</span></h2><a class="text-link" href="/blog/">All articles <span aria-hidden="true">↗</span></a></div><div class="journal-grid">
+        <article class="journal-card">
+          <a class="journal-link" href="/blog/ai-agent-permissions-production/">
+            <div class="journal-media">
+              <picture class="content-picture"><source type="image/avif" srcset="/images/editorial-v3-agent-permissions-cover-1200-640.avif 640w, /images/editorial-v3-agent-permissions-cover-1200-960.avif 960w, /images/editorial-v3-agent-permissions-cover-1200.avif 1200w" sizes="(max-width: 700px) calc(100vw - 28px), (max-width: 1024px) 48vw, 33vw" /><img src="/images/editorial-v3-agent-permissions-cover-1200.webp" srcset="/images/editorial-v3-agent-permissions-cover-1200-640.webp 640w, /images/editorial-v3-agent-permissions-cover-1200-960.webp 960w, /images/editorial-v3-agent-permissions-cover-1200.webp 1200w" sizes="(max-width: 700px) calc(100vw - 28px), (max-width: 1024px) 48vw, 33vw" alt="" width="1200" height="800" loading="lazy" decoding="async" fetchpriority="low" /></picture>
+              <span class="card-open glass-panel" aria-hidden="true"><span>+</span></span>
+            </div>
+            <h3 id="journal-title-ai-agent-permissions-production"><span class="alpha-mixed">AI ag<span class="alpha-pixel">e</span>nt perm<span class="alpha-pixel">i</span>ss<span class="alpha-pixel">i</span>ons: a pr<span class="alpha-pixel">a</span>ctic<span class="alpha-pixel">a</span>l b<span class="alpha-pixel">o</span>undary for pr<span class="alpha-pixel">o</span>ducti<span class="alpha-pixel">o</span>n aut<span class="alpha-pixel">o</span>n<span class="alpha-pixel">o</span>my</span></h3>
+            <span class="eyebrow">01 / Agent engineering</span>
+            
+          </a>
+        </article>
+        <article class="journal-card">
+          <a class="journal-link" href="/blog/structured-output-evaluation-production/">
+            <div class="journal-media">
+              <picture class="content-picture"><source type="image/avif" srcset="/images/editorial-v3-structured-outputs-cover-1200-640.avif 640w, /images/editorial-v3-structured-outputs-cover-1200-960.avif 960w, /images/editorial-v3-structured-outputs-cover-1200.avif 1200w" sizes="(max-width: 700px) calc(100vw - 28px), (max-width: 1024px) 48vw, 33vw" /><img src="/images/editorial-v3-structured-outputs-cover-1200.webp" srcset="/images/editorial-v3-structured-outputs-cover-1200-640.webp 640w, /images/editorial-v3-structured-outputs-cover-1200-960.webp 960w, /images/editorial-v3-structured-outputs-cover-1200.webp 1200w" sizes="(max-width: 700px) calc(100vw - 28px), (max-width: 1024px) 48vw, 33vw" alt="" width="1200" height="800" loading="lazy" decoding="async" fetchpriority="low" /></picture>
+              <span class="card-open glass-panel" aria-hidden="true"><span>+</span></span>
+            </div>
+            <h3 id="journal-title-structured-output-evaluation-production"><span class="alpha-mixed">Str<span class="alpha-pixel">u</span>ct<span class="alpha-pixel">u</span>red AI o<span class="alpha-pixel">u</span>tp<span class="alpha-pixel">u</span>ts: v<span class="alpha-pixel">a</span>lid JS<span class="alpha-pixel">O</span>N is only the f<span class="alpha-pixel">i</span>rst qu<span class="alpha-pixel">a</span>lity ch<span class="alpha-pixel">e</span>ck</span></h3>
+            <span class="eyebrow">02 / AI evaluation</span>
+            
+          </a>
+        </article></div></section></main><div class="contact-footer" id="contact" tabindex="-1">
+    <section class="contact" aria-labelledby="contact-title">
+      <div class="contact-panel viewport-tile__stage major-tile main-tile-surface">
+        <picture class="content-picture">
+          <source type="image/avif" srcset="/images/contact-verdigris-v6-640.avif 640w, /images/contact-verdigris-v6-960.avif 960w, /images/contact-verdigris-v6-1600.avif 1600w, /images/contact-verdigris-v6-2560.avif 2560w, /images/contact-verdigris-v6-3840.avif 3840w" sizes="auto, 100vw" />
+          <img src="/images/contact-verdigris-v6-960.webp" srcset="/images/contact-verdigris-v6-640.webp 640w, /images/contact-verdigris-v6-960.webp 960w, /images/contact-verdigris-v6-1600.webp 1600w, /images/contact-verdigris-v6-2560.webp 2560w, /images/contact-verdigris-v6-3840.webp 3840w" sizes="auto, 100vw" alt="" loading="lazy" decoding="async" fetchpriority="low" width="960" height="540" />
+        </picture>
+        <div>
+          <p class="eyebrow">Availability</p>
+          <h2 id="contact-title"><span class="alpha-mixed">get in t<span class="alpha-pixel">o</span>uch</span></h2>
+          <p>Have a question, an idea, or a rabbit hole worth exploring? I&#39;d love to hear from you.</p>
+        </div>
+        <form class="contact-form glass-panel" aria-labelledby="contact-title" action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="7a219932-14f4-4b1c-ba3e-2e3f4ad86944" />
+          <input type="hidden" name="subject" value="New message from jacobsgill.es" />
+          <input type="hidden" name="from_name" value="jacobsgilles website" />
+          <input type="hidden" name="redirect" value="https://jacobsgill.es/thanks.html" />
+          <input class="contact-botcheck" type="checkbox" name="botcheck" tabindex="-1" aria-hidden="true" />
+          <div class="contact-field">
+            <label for="contact-email">Email</label>
+            <div class="contact-control contact-control-email">
+              <input id="contact-email" name="email" type="email" autocomplete="email" placeholder="you@company.com" required />
+            </div>
+          </div>
+          <div class="contact-field">
+            <label for="contact-message">Message</label>
+            <div class="contact-control contact-control-message">
+              <textarea id="contact-message" name="message" rows="5" minlength="20" placeholder="What are you building? (20 characters minimum)" aria-describedby="contact-message-help" required></textarea>
+            </div>
+            <span class="visually-hidden" id="contact-message-help">Use at least 20 characters.</span>
+          </div>
+          <button class="button button-primary contact-submit contact-action-glass" type="submit">
+            <span class="contact-submit-content">
+              <span class="contact-submit-label">Send</span>
+              <span class="contact-chevron-symbol" aria-hidden="true"></span>
+            </span>
+          </button>
+        </form>
+      </div>
+    </section>
+  <footer class="major-tile main-tile-surface" aria-label="Site footer">
+    <div class="footer-email-block">
+      <span class="eyebrow">email me</span>
+      <a class="footer-email" href="mailto:mail@jacobsgill.es" aria-label="Email mail@jacobsgill.es">mail@<span class="footer-email-base">jacobs</span>gill.es</a>
+    </div>
+    <a class="footer-brand" href="#top" aria-label="jacobsgilles, back to top"><span class="alpha-mixed brand-wordmark brand-wordmark--descenders"><span class="alpha-pixel">jacobs</span><span class="brand-wordmark-accent">gilles</span></span></a>
+    <div class="footer-social" role="group" aria-labelledby="footer-social-title">
+      <span class="eyebrow" id="footer-social-title">Find me on</span>
+      <div class="footer-social-links">
+        <a class="footer-social-link" href="https://huggingface.co/GillesJacobs/datasets" target="_blank" rel="me noopener noreferrer" aria-label="Hugging Face" title="Hugging Face">
+          <span class="footer-social-icon footer-social-icon-huggingface" aria-hidden="true"></span>
+        </a>
+        <a class="footer-social-link" href="https://github.com/gillesj" target="_blank" rel="me noopener noreferrer" aria-label="GitHub" title="GitHub">
+          <span class="footer-social-icon footer-social-icon-github" aria-hidden="true"></span>
+        </a>
+        <a class="footer-social-link" href="https://x.com/gillesmjacobs" target="_blank" rel="me noopener noreferrer" aria-label="X" title="X">
+          <span class="footer-social-icon footer-social-icon-x" aria-hidden="true"></span>
+        </a>
+        <a class="footer-social-link" href="https://www.youtube.com/@gillesjacobs1907" target="_blank" rel="me noopener noreferrer" aria-label="YouTube" title="YouTube">
+          <span class="footer-social-icon footer-social-icon-youtube" aria-hidden="true"></span>
+        </a>
+        <a class="footer-social-link" href="https://orcid.org/0000-0001-8846-3015" target="_blank" rel="me noopener noreferrer" aria-label="ORCID" title="ORCID">
+          <span class="footer-social-icon footer-social-icon-orcid" aria-hidden="true"></span>
+        </a></div>
+    </div>
+  </footer></div>
+      </div>
+    </div><div id="page-announcement" class="visually-hidden" role="status" aria-live="polite"></div>
+  </body>
+</html>
