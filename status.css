@@ -72,3 +72,17 @@ a {
   text-transform: uppercase;
 }
 a:focus-visible { outline: 3px solid #f7f4ec; outline-offset: 5px; }
+
+/* Utility pages keep the shared wordmark on their light button without loading the full site shell. */
+.brand-wordmark {
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.alpha-pixel {
+  font-feature-settings: "calt" 0, "ss01" 1, "liga" 0;
+}
+
+.brand-wordmark-ex {
+  color: var(--accent);
+}
